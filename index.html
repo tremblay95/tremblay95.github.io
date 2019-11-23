@@ -61,22 +61,24 @@
 	</div>
 
 	<span class="bookmark" id="about"></span>
-	<div class="container about">
-		<div class="row">
-			<div class="mx-auto">
-				<h1 class="underline px-2 title text-center">About Me</h1>
+	<div class="container-fluid">
+		<div class="container about">
+			<div class="row">
+				<div class="mx-auto">
+					<h1 class="underline px-2 title text-center">About Me</h1>
+				</div>
 			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col text-justify">
-				<p class="my-auto">{{ site.about-me }}</p>
+			<br>
+			<div class="row">
+				<div class="col text-justify">
+					<p class="my-auto">{{ site.about-me }}</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<span class="bookmark" id="projects"></span>
 	{% assign sp1 = site.data.showcases.showcase1 %}
-	<div class="container-fluid dark showcase" id="projects">
+	<div class="container-fluid dark showcase">
 		<div class="container">
 			<div class="row">
 				<div class="mx-auto">
