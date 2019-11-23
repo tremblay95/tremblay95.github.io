@@ -1,0 +1,235 @@
+---
+---
+
+@import "main";
+
+{% for var in site.sass_js_vars %}
+${{ var[0] }}: {{ var[1] }};
+{% endfor %}
+
+.nav-bg-dark{
+	background: transparent;
+}
+
+.title{
+	font-family: 'Rubik', sans-serif;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	color: white;
+	
+	background-color: black;
+
+	.d-sm-block{
+		z-index: 1;
+		text-align: center;
+		h1{
+			font-size: 5.5rem;
+			font-weight: 300;
+		}
+		h3{
+			font-weight: 300;
+			font-size: 3rem;
+		}
+	}
+	.d-block{
+		z-index: 1;
+		text-align: center;
+		h1{
+			font-size: 2.5rem;
+			font-weight: 300;
+		}
+		h3{
+			font-weight: 300;
+			font-size: 1.5rem;
+		}
+	}
+
+	hr{
+		border: 1px solid $highlight;
+	}
+
+	.video-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+
+		.header-overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: black;
+			width: 100%;
+			height: 100vh;
+			opacity: 0.7;
+		}
+		video{
+			object-fit: cover;
+			width: 100%;
+			height: 100vh;
+			border-radius: 1px;
+		}
+	}
+}
+.navbar{
+	font-family: 'Rubik', sans-serif;
+	.nav-link{
+		color: white!important;
+		&:hover{
+			color: $highlight!important;
+			font-weight: 600;
+		}
+	}
+}
+
+.about, .showcase, .projects{
+	padding: 3rem 0;
+}
+
+.dark{
+	background: $darker;
+	color: white;
+
+	.project-link:hover{
+		color: $darker;
+	}
+}
+
+.underline{
+	border-bottom: 2px solid $highlight;
+}
+
+.img-thumbnail{
+	border: 2px solid $highlight!important;
+	padding: 0;
+	border-radius: 0;
+}
+
+.project-link{
+	padding: 1rem 2.5rem;
+	border: 2px solid $highlight;
+	color: $highlight;
+	text-decoration: none;
+	text-align: center;
+	min-width: 12rem;
+	width: 100%;
+	max-width: 20rem;
+	font-weight: 600;
+	background: transparent;
+	transition: 0.2s;
+
+	&:hover{
+		color: white;
+		text-decoration: none;
+		background-color: $highlight;
+	}
+
+}
+.proj-card{
+	.img-thumbnail{
+		border: none!important;
+	}
+	.overlay{
+		background-color: black;
+		opacity: 0.7;
+	}
+	.text-overlay{
+		opacity: 1;
+	}
+	.overlay, .text-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		transition: 0.3s ease;
+	}
+
+	&:hover{
+		.overlay{
+			opacity: 0.8;
+		}
+	}
+	&:active{
+		.text-overlay{
+			color: $highlight;
+			transition: 0s;
+		}
+	}
+
+	.tags{
+		span{
+			color: white;
+			border: 1px solid $highlight;
+			border-radius: 3px;
+		}
+	}
+}
+
+.bg-dark{
+	background-color: $dark!important;
+}
+
+footer{
+	
+	.copy{
+		color: $highlight;
+	}
+
+	a, a:hover{
+		text-decoration: none;
+	}
+
+	a:hover i{
+		color: $highlight!important;
+	}
+
+}
+
+
+.modal{
+	.modal-content{
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-footer{
+		border: none;
+	}
+	.modal-header{
+		border-bottom: 3px solid $highlight;
+	}
+
+	.project-link{
+		min-width: 6rem;
+		width: 100%;
+		max-width: 12rem;
+		padding: 0.3rem 0;
+	}
+
+	.carousel-control-prev, .carousel-control-next{
+		top: 85%;
+		width: 10%;
+		background-color: rgba(0,0,0,0.7);
+	}
+}
+
+.hidden{
+	display: none;
+}
+
+.bookmark{
+	position: relative;
+	top: -40px;
+}

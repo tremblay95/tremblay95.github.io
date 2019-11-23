@@ -1,0 +1,85 @@
+body { background: #ffffff; color: #000000; font-family: "Roboto", sans-sarif; }
+
+.nav-bg-dark { background: transparent; }
+
+.title { font-family: 'Rubik', sans-serif; }
+
+.header { position: relative; width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; color: white; background-color: black; }
+
+.header .d-sm-block { z-index: 1; text-align: center; }
+
+.header .d-sm-block h1 { font-size: 5.5rem; font-weight: 300; }
+
+.header .d-sm-block h3 { font-weight: 300; font-size: 3rem; }
+
+.header .d-block { z-index: 1; text-align: center; }
+
+.header .d-block h1 { font-size: 2.5rem; font-weight: 300; }
+
+.header .d-block h3 { font-weight: 300; font-size: 1.5rem; }
+
+.header hr { border: 1px solid #009696; }
+
+.header .video-container { position: absolute; top: 0; left: 0; width: 100%; text-align: center; }
+
+.header .video-container .header-overlay { position: absolute; top: 0; left: 0; background-color: black; width: 100%; height: 100vh; opacity: 0.7; }
+
+.header .video-container video { object-fit: cover; width: 100%; height: 100vh; border-radius: 1px; }
+
+.navbar { font-family: 'Rubik', sans-serif; }
+
+.navbar .nav-link { color: white !important; }
+
+.navbar .nav-link:hover { color: #009696 !important; font-weight: 600; }
+
+.about, .showcase, .projects { padding: 3rem 0; }
+
+.dark { background: #111; color: white; }
+
+.dark .project-link:hover { color: #111; }
+
+.underline { border-bottom: 2px solid #009696; }
+
+.img-thumbnail { border: 2px solid #009696 !important; padding: 0; border-radius: 0; }
+
+.project-link { padding: 1rem 2.5rem; border: 2px solid #009696; color: #009696; text-decoration: none; text-align: center; min-width: 12rem; width: 100%; max-width: 20rem; font-weight: 600; background: transparent; transition: 0.2s; }
+
+.project-link:hover { color: white; text-decoration: none; background-color: #009696; }
+
+.proj-card .img-thumbnail { border: none !important; }
+
+.proj-card .overlay { background-color: black; opacity: 0.7; }
+
+.proj-card .text-overlay { opacity: 1; }
+
+.proj-card .overlay, .proj-card .text-overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; transition: 0.3s ease; }
+
+.proj-card:hover .overlay { opacity: 0.8; }
+
+.proj-card:active .text-overlay { color: #009696; transition: 0s; }
+
+.proj-card .tags span { color: white; border: 1px solid #009696; border-radius: 3px; }
+
+.bg-dark { background-color: #222 !important; }
+
+footer .copy { color: #009696; }
+
+footer a, footer a:hover { text-decoration: none; }
+
+footer a:hover i { color: #009696 !important; }
+
+.modal .modal-content { border-radius: 0; border: none; }
+
+.modal .modal-footer { border: none; }
+
+.modal .modal-header { border-bottom: 3px solid #009696; }
+
+.modal .project-link { min-width: 6rem; width: 100%; max-width: 12rem; padding: 0.3rem 0; }
+
+.modal .carousel-control-prev, .modal .carousel-control-next { top: 85%; width: 10%; background-color: rgba(0, 0, 0, 0.7); }
+
+.hidden { display: none; }
+
+.bookmark { position: relative; top: -40px; }
+
+/*# sourceMappingURL=main.css.map */

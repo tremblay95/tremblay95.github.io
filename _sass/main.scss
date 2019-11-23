@@ -1,0 +1,9 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: 'Roboto', sans-sarif;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}

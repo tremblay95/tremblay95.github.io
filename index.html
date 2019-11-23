@@ -1,39 +1,228 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Marc Tremblay</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.title }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+		favicon made by font awesome. https://fontawesome.com/icons/code-branch?style=solid
+		license: https://fontawesome.com/license
+		changes made: downloaded as .svg and converted to .ico
+	-->
+	<link rel="icon" href="/assets/images/code-branch-solid.png" type="images/png">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Marc Tremblay</h1>
-				<h2>Software Developer</h2>
-				<p>Site is currently under construction. Please check back later for the full site.</p>
-			</header>
+	<script src="https://kit.fontawesome.com/7e5de45054.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:400,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark nav-bg-dark fixed-top">
+		<a class="navbar-brand" href="#">{{ site.title }}</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link text-center" href="#about">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="#projects">My Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="#contact">Contact Me</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="header title">
+		<div class="d-none d-sm-block">
+			<h1>{{ site.title }}</h1> 
+			<hr>
+			<h3>Software Developer</h3>
+		</div>
+		<div class="d-block d-sm-none">
+			<h1>{{ site.title }}</h1>
+			<hr>
+			<h3>Software Developer</h3>
+		</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a target="_blank" href="https://www.linkedin.com/in/marc-tremblay-59456a133" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a target="_blank" href="https://github.com/mrchadley" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a target="_blank" href="mailto:marc.tremblay1995@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2019 by Marc Tremblay.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+		<div class="video-container">
+			<div class="header-overlay"></div>
+			<video autoplay muted loop poster="/assets/images/video-thumbnail.jpg">
+				<source src="/assets/videos/video_720.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+	<span class="bookmark" id="about"></span>
+	<div class="container about">
+		<div class="row">
+			<div class="mx-auto">
+				<h1 class="underline px-2 title text-center">About Me</h1>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col text-justify">
+				<p class="my-auto">{{ site.about-me }}</p>
+			</div>
+		</div>
+	</div>
+	<span class="bookmark" id="projects"></span>
+	{% assign sp1 = site.data.showcases.showcase1 %}
+	<div class="container-fluid dark showcase" id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto">
+					<h1 class="underline px-2 title text-center">{{ sp1.title }}</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg d-flex">
+					<img src="/assets/projects/{{ sp1.title }}/main.jpg" class="img-thumbnail my-auto" />
+				</div>
+				<div class="col-lg d-flex flex-column mt-5 mt-lg-0">
+					<p class="my-auto text-justify">{{ sp1.description }}</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm d-flex">
+					<button type="button" data-toggle="modal" data-target="#proj-modal" onclick="showShowcase(0)" class="project-link mx-auto">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	</body>
+	{% assign sp2 = site.data.showcases.showcase2 %}
+	<div class="container-fluid showcase">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto">
+					<h1 class="underline px-2 title text-center">{{ sp2.title }}</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg d-flex">
+					<img src="/assets/projects/{{ sp2.title }}/main.jpg" class="img-thumbnail my-auto" />
+				</div>
+				<div class="col-lg d-flex flex-column mt-5 mt-lg-0">
+					<p class="my-auto text-justify">{{ sp2.description }}</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm d-flex">
+					<button type="button" data-toggle="modal" data-target="#proj-modal" onclick="showShowcase(1)" class="project-link mx-auto">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid dark projects">
+		<div class="container">
+			<div class="row">
+				<div class="mx-auto">
+					<h1 class="underline px-2 title text-center">Other Projects</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row justify-content-center">
+			{% for proj in site.data.projects %}
+				<div class="col-lg-4 col-md-6 mx-0 my-0 px-0 py-0 proj-card" data-toggle="modal" data-target="#proj-modal" onclick="showProject({{ forloop.index0 }})">
+					<img src="/assets/projects/{{proj.title}}/main.jpg" class="img-thumbnail my-auto" />
+					<div class="overlay"></div>
+					<div class="text-overlay d-flex flex-column py-4">
+						<div class="mx-auto my-auto">
+							<h3 class="underline px-1 title text-center">{{proj.title}}</h3>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<span class="bookmark" id="contact"></span>
+	<footer class="footer bg-dark">
+		<div class="container pt-4 text-center">
+			<a class="text-secondary" target="_blank" href="{{ site.socials.resume }}" title="Resume">
+				<i class="fas fa-file-alt fa-lg p-3"> </i>
+			</a>
+
+			<a class="text-secondary" target="_blank" href="{{ site.socials.github }}" title="Github">
+				<i class="fab fa-github fa-lg p-3"> </i>
+			</a>
+
+			<a class="text-secondary" target="_blank" href="{{ site.socials.linkedin }}" title="LinkedIn">
+				<i class="fab fa-linkedin fa-lg p-3"> </i>
+			</a>
+			<a class="text-secondary" target="_blank" href="mailto:{{ site.socials.email }}" title="Email">
+				<i class="fas fa-envelope fa-lg p-3"> </i>
+			</a>
+		</div>
+
+		<div class="container py-3 text-center">
+			<small class="text-secondary">&copy; Copyright {{ 'now' | date: "%Y" }} by <span class="copy">Marc Tremblay</span></small>
+		</div>
+	</footer>
+
+	<div class="modal" id="proj-modal">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header p-0">
+					<div class="carousel slide" id="carousel">
+						<ul class="carousel-indicators" id="indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+						</ul>
+
+						<div class="carousel-inner" id="gallery">
+							<div class="carousel-item active">
+								<img class="img-fluid" src="/assets/images/01_chat.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="/assets/images/01_bananas.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="/assets/images/01_complete.jpg">
+							</div>
+						</div>
+
+						<a class="carousel-control-prev" href="#carousel" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#carousel" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+
+					</div>
+				</div>
+				<div class="modal-body">
+					<h1 id="modal-title">title</h1>
+					<p id="modal-desc">description</p>
+				</div>
+				<div class="modal-footer">
+					<a href="#" id="modal-link" class="project-link mr-auto">View Code</a>
+					<button type="button" class="close mx-2" data-dismiss="modal"><i class="fas fa-times"></i></button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="/assets/js/main.js"></script>
+</body>
 </html>
