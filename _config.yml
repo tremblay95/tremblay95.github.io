@@ -1,7 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Marc Tremblay" # the name of your site, e.g. ACME Corp.
-about-me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate lectus a egestas tincidunt. Ut enim lorem, finibus at tellus ut, venenatis cursus quam. Mauris nec pellentesque ex, eu ultrices elit. Pellentesque sem dui, pharetra eu vehicula quis, viverra tempor massa. Donec volutpat quam neque, sed vehicula erat pretium ac. Donec condimentum convallis bibendum. Sed lacus elit, posuere ut tortor et, pretium tempor lacus. Cras aliquam turpis a pretium blandit. Quisque vulputate turpis sit amet bibendum feugiat. Maecenas dapibus eros nec placerat cursus. Integer ac ultricies diam. Ut tortor justo, blandit eu dolor sed, mattis pretium lorem. Aliquam nulla ligula, fringilla vel eleifend sed, vestibulum in nunc. Etiam faucibus ut justo sed malesuada."
 
 socials:
   resume: "/assets/docs/Marc Tremblay - Resume.pdf"

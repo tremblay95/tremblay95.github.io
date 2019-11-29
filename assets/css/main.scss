@@ -179,6 +179,7 @@ ${{ var[0] }}: {{ var[1] }};
 
 .bg-dark{
 	background-color: $dark!important;
+	color: white;
 }
 
 footer{
@@ -199,6 +200,12 @@ footer{
 
 
 .modal{
+	iframe{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
 	.modal-content{
 		border-radius: 0;
 		border: none;
@@ -218,8 +225,13 @@ footer{
 		padding: 0.3rem 0;
 	}
 
+	.carousel{
+		width: 100%;
+	}
+
 	.carousel-control-prev, .carousel-control-next{
-		top: 85%;
+		top: 65%;
+		height: 3rem;
 		width: 10%;
 		background-color: rgba(0,0,0,0.7);
 	}
@@ -232,4 +244,8 @@ footer{
 .bookmark{
 	position: relative;
 	top: -40px;
+}
+
+.modal-open{
+	padding: 0;
 }

@@ -50,20 +50,40 @@ function fillProjectModal(proj){
 	}
 
 	$("#modal-title").text(proj.title);
-	$("#modal-desc").text(proj.description);
+	$("#modal-desc").html(proj.description);
+
 
 	var $gallery = $("#gallery");
 	var $inds = $("#indicators");
 
-	$gallery.html(`
-	<div class="carousel-item active">
-		<img class="img-fluid" src="/assets/projects/`+ proj.title + `/` + proj.images[0] +`">
-	</div>
-	`);
+	var carouselIndex = 0;
+	var imagesIndex = 0;
+
+	if(proj.video){
+		$gallery.html(`
+		<div class="carousel-item active">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="` + proj.video + `" allowfullscreen></iframe>
+			</div>
+		</div>
+		`);
+
+		++carouselIndex;
+	}
+	else
+	{
+		$gallery.html(`
+		<div class="carousel-item active">
+			<img class="img-fluid" src="/assets/projects/`+ proj.title + `/` + proj.images[0] +`">
+		</div>
+		`);
+		++imagesIndex;
+		++carouselIndex;
+	}
 	
 	$inds.html(`<li data-target="#carousel" data-slide-to="0" class="active"></li>`);
 
-	if(proj.images.length > 1){
+	if(proj.images.length > 1 || proj.video){
 		$inds.removeClass("hidden");
 		$("#carousel>a").removeClass("hidden");
 	} else {
@@ -71,13 +91,13 @@ function fillProjectModal(proj){
 		$("#carousel>a").addClass("hidden");
 	}
 
-	for(var i = 1; i < proj.images.length; ++i){
+	for(; imagesIndex < proj.images.length; ++imagesIndex, ++carouselIndex){
 		$gallery.append(`
 		<div class="carousel-item">
-			<img class="img-fluid" src="/assets/projects/`+ proj.title + `/` + proj.images[i] +`">
+			<img class="img-fluid" src="/assets/projects/`+ proj.title + `/` + proj.images[imagesIndex] +`">
 		</div>
 		`);
-		$inds.append(`<li data-target="#carousel" data-slide-to="` + i + `"></li>`);
+		$inds.append(`<li data-target="#carousel" data-slide-to="` + carouselIndex + `"></li>`);
 	}
 
 }
