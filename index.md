@@ -1,3 +1,3 @@
-# Marc Tremblay - Software Developer
+## Software Developer / Game Programmer
 
 This portfolio is still a WIP.
