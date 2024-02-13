@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Home"
+---
+
+<!-- About Me Section -->
+{% capture aboutme %}
+<p class="lead px-5">
+    {{ site.about-me }}
+<!-- </p>
+<div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
+    <a class="btn btn-primary btn-lg px4 me-sm-3 fw-bold" href="/resume.html">Online CV</a>
+</div> -->
+{% endcapture %}
+
+{% include section.html title="About Me" content=aboutme %}
+
+
+<!-- Projects Section -->
+{% capture projects %}
+<div class="row justify-content-center">
+{% for item in site.data.projects %}
+    {% include project-card.html item=item %}
+{% endfor %}
+</div>
+{% endcapture %}
+
+{% include section.html title="Recent Projects" content=projects %}

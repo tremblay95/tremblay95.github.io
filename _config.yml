@@ -1,0 +1,10 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+author: "Marc Tremblay"
+title: "Marc Tremblay" # the name of your site, e.g. ACME Corp.
+tagline: "Software Developer // Game Programmer"
+about-me: "My name is Marc. I'm a results-driven Game Programmer and Software Developer seeking a challenging role in game development. Proven track record of collaborating within interdisciplinary teams to deliver innovative projects, with expertise in C++, C#, Unity, and Unreal Engine."
+
+sass:
+  load_paths:
+      - _sass

@@ -1,0 +1,12 @@
+@import "vars";
+@import "bootstrap-5.3.2/scss/bootstrap.scss";
+
+/* Custom Styles */
+
+.text-truncate-3
+{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

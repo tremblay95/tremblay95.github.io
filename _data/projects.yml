@@ -1,0 +1,22 @@
+- title: "Aura"
+  description: "An RPG project made in Unreal Engine 5, with C++ and Blueprints, using Unreal's Gameplay Ability System plugin. This project is based on the resulting project from Stephen Ulibarri's 'Unreal Engine 5 - Gameplay Ability System - Top Down RPG' course on Udemy."
+  image: "assets/images/aura-temp.png"
+  tags: [ "C++", "UE5", "GAS" ]
+  status: "In Progress"
+  status-color: "warning"
+  url: "https://github.com/tremblay95/ue5-gas-aura"
+  link-props: 'target="_blank" rel="noopener noreferrer"'
+
+- title: "Portfolio Website"
+  description: This portfolio website. Made using Jekyll static site generator and Bootstrap 5.
+  image: "assets/images/pf-temp.png"
+  tags: [ "HTML", "Jekyll", "Bootstrap", "SCSS" ]
+  status: "In Progress"
+  status-color: "warning"
+
+- title: Temp Project
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus dolor, volutpat at nisl eu, bibendum sodales purus. Quisque pharetra, odio ut congue laoreet, magna nunc lacinia dolor, eu placerat elit nunc ac ex. Pellentesque nisi eros, fermentum at commodo vitae, dapibus eu mauris. Nullam dictum sapien magna, sed aliquet tortor feugiat ac.
+  image: "assets/images/aura-temp.png"
+  tags: [ "Some", "Tag" ]
+  status: "Done"
+  status-color: "secondary"

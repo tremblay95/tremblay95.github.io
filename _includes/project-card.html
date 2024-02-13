@@ -1,0 +1,28 @@
+{% if include.item.status %}
+    {% capture badge %}
+        <p><span class="badge fw-normal rounded-pill px-3 py-2 bg-{{ include.item.status-color }} text-white">{{ include.item.status }}</span></p>
+    {% endcapture %}
+{% else %}
+    {% assign statuscolor = "muted" -%}
+    {% capture badge %}
+        <div class="pt-3 pb-4"></div>
+    {% endcapture %}
+{% endif %}
+<div class="card p-0 col-xxl-3 col-xl-4 col-md-6 mx-2 my-2 border-2 shadow">
+    {% if include.item.image %}
+        <img src="{{ include.item.image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.item.title }}">
+    {% endif %}
+    <div class="card-body">
+        {% if include.item.url %}
+            <h3 class="card-title text-primary fw-bold"><a class="text-decoration-none" href="{{ include.item.url }}" {{ include.item.link-props }}>{{ include.item.title }}</a></h3>{{ badge }}
+        {% else %}
+            <h3 class="card-title text-primary fw-bold">{{ include.item.title }}</h3>{{ badge }}
+        {% endif %}
+        <p class="text-left card-text text-primary text-truncate-3">{{ include.item.description }}</p>
+        <div class="d-grid gap-2 d-flex justify-content-center">
+        {% for tag in include.item.tags %}
+            {% include tag.html content=tag %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
