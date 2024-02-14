@@ -1,0 +1,35 @@
+- date: "2021 - 2023"
+  title: "Software Engineer at IUGO Mobile Entertainment"
+  description: "This will be a description of what I did while at IUGO."
+
+- date: "2020 - 2021"
+  title: "Game Programmer at Red Meat Games"
+  description: "This will be a description of what I did while at RMG."
+  
+- date: "2020"
+  title: "Teaching Assistant at UOIT"
+  description: "This will be a description of what I did while at UOIT."
+
+- date: "2014 - 2019"
+  title: "Bachelor of Science (Hons.) Computer Science"
+  description: "This will be a description of what I did while at UOIT."
+
+- date: "2019"
+  title: "Teaching Assistant at UOIT"
+  description: "This will be a description of what I did while at UOIT."
+  
+- date: "2018"
+  title: "Game Programmer (Intern) at Blot Interactive"
+  description: "This will be a description of what I did while at Blot."
+  
+- date: "2017"
+  title: "Game Programmer (Intern) at Red Meat Games"
+  description: "This will be a description of what I did while at RMG."
+    
+- date: "2010 - 2012"
+  title: "Participated in 'ProtoLaunch'"
+  description: "ProtoLaunch was an extracurricular program run in Sault Ste. Marie, ON in which video game industry professionals gave lectures and tutorials through out the school year on the various aspects of game development. During the summer break, students were invited to participate in a 5-week long game dev competition / summer job with a chance to win a tour of Ubisoft's Montreal studio."
+      
+- date: "2010"
+  title: "Wrote My First Lines of Code"
+  description: "A simple 'Hello, World!' program written in Python."

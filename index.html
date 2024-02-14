@@ -5,12 +5,14 @@ title: "Home"
 
 <!-- About Me Section -->
 {% capture aboutme %}
-<p class="lead px-5">
-    {{ site.about-me }}
-<!-- </p>
-<div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
-    <a class="btn btn-primary btn-lg px4 me-sm-3 fw-bold" href="/resume.html">Online CV</a>
-</div> -->
+    <div class="mx-auto col-xxl-10 col-12">
+        <p class="lead px-5">
+            {{ site.about-me }}
+        </p>
+        <!-- <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/resume">Online CV</a>
+        </div> -->
+    </div>
 {% endcapture %}
 
 {% include section.html title="About Me" content=aboutme %}
@@ -18,11 +20,44 @@ title: "Home"
 
 <!-- Projects Section -->
 {% capture projects %}
-<div class="row justify-content-center">
-{% for item in site.data.projects %}
-    {% include project-card.html item=item %}
-{% endfor %}
-</div>
+    <div class="row justify-content-center">
+    {% for item in site.data.projects %}
+        {% include project-card.html item=item %}
+    {% endfor %}
+    </div>
+    <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
+        <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/projects">All Projects</a> -->
+        <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="{{ site.github-url }}" target="_blank" rel="noopener noreferrer">My GitHub</a>
+    </div>
 {% endcapture %}
 
 {% include section.html title="Recent Projects" content=projects %}
+
+
+{% capture timeline %}
+    {% for item in site.data.timeline %}
+    <div class="row justify-content-center my-3">
+        <div class="col-md-10">
+            <div class="d-flex flex-column flex-md-row justify-content-start justify-content-md-center">
+                <p class="d-md-inline d-none col-xl-4 col-md-3 text-secondary border-end border-2 border-muted px-4 fw-semibold my-0 text-end">
+                    {{ item.date }}
+                </p>
+                <p class="d-md-none d-inline col-xl-4 col-md-3 text-secondary px-4 fw-semibold my-0 text-start">
+                    {{ item.date }}
+                </p>
+                <div class="col-xl-8 col-md-9 py-0 mx-4 text-start">
+                    <h5 class="fw-bold text-primary">{{ item.title }}</h5>
+                    <p class="">{{ item.description }}</p>
+                </div>
+                {% if forloop.last != true %}
+                <div class="d-flex justify-content-center d-md-none">
+                    <hr class="bg-muted border-1 rounded-pill border border-muted col-10" />
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endcapture %}
+
+{% include section.html title="My Timeline" content=timeline %}
