@@ -2,8 +2,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 author: "Marc Tremblay"
 title: "Marc Tremblay" # the name of your site, e.g. ACME Corp.
-tagline: 'Software Developer -<br class="d-sm-none" /> Game Programmer'
-about-me: "A results-driven Game Programmer and Software Developer seeking a challenging role in software or game development, in an environment where I can continue to learn and improve my skills. I have several years of experience working in Unity and proprietary game engines, in large code bases, in various phases of the development process, and for various platforms including VR, console, and mobile. I have experience taking features from design to completion, collaborating between disciplines, and working remotely in an agile workplace."
+tagline: 'Software Developer <span class="d-sm-inline d-none">-</span><br class="d-sm-none" /> Game Programmer'
+about-me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor."
 github-url: "https://github.com/tremblay95"
 
 sass:

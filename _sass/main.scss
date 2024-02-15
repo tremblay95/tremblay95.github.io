@@ -10,3 +10,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.hero-gradient
+{
+    background: radial-gradient(at top left, $cyan-700, $primary);
+}
