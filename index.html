@@ -15,7 +15,7 @@ title: "Home"
     </div>
 {% endcapture %}
 
-{% include section.html title="About Me" content=aboutme %}
+{% include section.html title="About Me" content=aboutme id="about" %}
 
 
 <!-- Projects Section -->
@@ -31,7 +31,7 @@ title: "Home"
     </div>
 {% endcapture %}
 
-{% include section.html title="Recent Projects" content=projects %}
+{% include section.html title="Recent Projects" content=projects id="projects" %}
 
 
 {% capture timeline %}
@@ -60,4 +60,4 @@ title: "Home"
     {% endfor %}
 {% endcapture %}
 
-{% include section.html title="My Timeline" content=timeline %}
+{% include section.html title="My Timeline" content=timeline id="timeline" %}

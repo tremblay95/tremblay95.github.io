@@ -14,7 +14,7 @@
     {% endif %}
     <div class="card-body">
         {% if include.item.url %}
-            <h3 class="card-title text-primary fw-bold"><a class="text-decoration-none" href="{{ include.item.url }}" {{ include.item.link-props }}>{{ include.item.title }}</a></h3>{{ badge }}
+            <h3 class="card-title fw-bold"><a class="link-underline-opacity-0 link-primary link-underline-opacity-75-hover" href="{{ include.item.url }}" {{ include.item.link-props }}>{{ include.item.title }}</a></h3>{{ badge }}
         {% else %}
             <h3 class="card-title text-primary fw-bold">{{ include.item.title }}</h3>{{ badge }}
         {% endif %}
