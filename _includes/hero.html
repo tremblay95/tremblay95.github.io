@@ -3,7 +3,6 @@
         <h1 class="display-1 fw-semibold d-lg-inline d-none">{{ site.title }}</h1>
         <h1 class="display-2 fw-semibold d-lg-none">{{ site.title }}</h1>
         <h4 class="fw-semibold">{{ site.tagline }}</h4>
-        <!-- TODO: add social icons -->
         <div class="d-grid gap-md-5 gap-3 mt-0 d-flex justify-content-center">
             <a href="mailto:{{ site.email }}" alt="email me" class="link-light display-3 link-opacity-75-hover" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-envelope"></i>
@@ -21,5 +20,11 @@
             <h5><a class="text-decoration-none link-light link-opacity-75-hover" href="#timeline" data-scroll>Timeline</a></h5>
         </div>
     </div>
-    <!-- TODO: add down arrow -->
+    <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4">
+        <div class="animate__animated animate__bounce animate__slower animate__delay-1s">
+            <a class="link-light link-opacity-75-hover display-5" href="#about" data-scroll>
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+        </div>
+    </div>
 </div>
