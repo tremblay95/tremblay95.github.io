@@ -1,12 +1,24 @@
 <div id="particles-js" class="p-0 hero-gradient vh-100 text-white text-center shadow position-relative">
     <div class="p-0 m-0 col-sm-8 col-12 position-absolute top-50 start-50 translate-middle">
-        <h1 class="display-3 fw-bold">{{ site.title }}</h1>
+        <h1 class="display-1 fw-semibold d-lg-inline d-none">{{ site.title }}</h1>
+        <h1 class="display-2 fw-semibold d-lg-none">{{ site.title }}</h1>
         <h4 class="fw-semibold">{{ site.tagline }}</h4>
         <!-- TODO: add social icons -->
+        <div class="d-grid gap-md-5 gap-3 mt-0 d-flex justify-content-center">
+            <a href="mailto:{{ site.email }}" alt="email me" class="link-light display-3 link-opacity-75-hover" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="{{ site.github-url }}" alt="github" class="link-light display-3 link-opacity-75-hover" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a href="{{ site.linkedin-url }}" alt="linkedin" class="link-light display-3 link-opacity-75-hover" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
         <div class="d-grid gap-md-4 mt-0 d-md-flex d-none justify-content-sm-center">
-            <h5><a class="text-decoration-none link-light link-opacity-50-hover" href="#about" data-scroll>About</a></h5>
-            <h5><a class="text-decoration-none link-light link-opacity-50-hover" href="#projects" data-scroll>Projects</a></h5>
-            <h5><a class="text-decoration-none link-light link-opacity-50-hover" href="#timeline" data-scroll>Timeline</a></h5>
+            <h5><a class="text-decoration-none link-light link-opacity-75-hover" href="#about" data-scroll>About</a></h5>
+            <h5><a class="text-decoration-none link-light link-opacity-75-hover" href="#projects" data-scroll>Projects</a></h5>
+            <h5><a class="text-decoration-none link-light link-opacity-75-hover" href="#timeline" data-scroll>Timeline</a></h5>
         </div>
     </div>
     <!-- TODO: add down arrow -->
