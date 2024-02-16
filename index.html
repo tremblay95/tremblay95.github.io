@@ -1,7 +1,9 @@
 ---
 layout: default
 title: ""
+particles: true
 ---
+{% include hero.html %}
 
 <!-- About Me Section -->
 {% capture aboutme %}
@@ -9,9 +11,9 @@ title: ""
         <p class="lead px-5">
             {{ site.about-me }}
         </p>
-        <!-- <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
-            <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/resume">Online CV</a>
-        </div> -->
+        <div class="d-grid gap-2 mt-5 d-flex justify-content-sm-center">
+            <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/resume">Resume</a>
+        </div>
     </div>
 {% endcapture %}
 

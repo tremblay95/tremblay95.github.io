@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "IUGO Mobile Entertainment",
+    "date": "2021 - 2023",
+    "tasks": 
+    [
+      "Followed reproduction steps to diagnose and fix bugs",
+      "Collaborated with cross-functional teams to implement new features",
+      "Participated in code reviews to ensure the highest quality standards",
+      "Refactored game code to integrate the latest SDK updates",
+      "Assessed feature designs to plan tasks and estimate time requirements"
+    ],
+    "projects": 
+    [
+      {
+        "title": "Unannounced IP"
+      }, 
+      {
+        "title": "Kingpin Underworld",
+        "url": "https://iugome.com/kingpin-underworld/"
+      }
+    ]
+  },
+  {
+    "title": "Game Programmer",
+    "company": "Red Meat Games",
+    "date": "2020 - 2021",
+    "tasks": 
+    [
+      "Collaborated with team members to develop mobile game prototypes",
+      "Optimized game systems, significantly improving performance",
+      "Identified and resolved complex bugs"
+    ],
+    "projects": 
+    [
+      {
+        "title": "Sentience",
+        "url": "https://redmeat.games/sentience/" 
+      }, 
+      {
+        "title": "Finding Heidi",
+        "url": "https://redmeat.games/finding-heidi/"
+      },
+      {
+        "title": "Unreleased Prototypes"
+      }
+    ]
+  },
+  {
+    "title": "Teaching Assistant",
+    "company": "University of Ontario Institute of Technology",
+    "date": "2019, 2020",
+    "tasks": 
+    [
+      "Collaborated with team members to develop mobile game prototypes",
+      "Optimized game systems, significantly improving performance",
+      "Identified and resolved complex bugs"
+    ],
+    "projects": 
+    [
+      {
+        "title": "Programming Workshop II"
+      }, 
+      {
+        "title": "Computer Graphics and Visualizations"
+      }
+    ]
+  },
+  {
+    "title": "Game Programmer (Intern)",
+    "company": "Blot Interactive",
+    "date": "2018",
+    "tasks": 
+    [
+      "Ported old Facebook Messenger game to standalone PC platform",
+      "Integrated Steamworks API, adding Steam and multiplayer functionality"
+    ],
+    "projects": 
+    [
+      {
+        "title": "VocaBRAWLary",
+        "url": "https://blotinteractive.itch.io/vocabrawlary" 
+      }
+    ]
+  },
+  {
+    "title": "Game Programmer (Intern)",
+    "company": "Red Meat Games",
+    "date": "2017",
+    "tasks": 
+    [
+      "Collaborated with team members to identify and resolve bugs",
+      "Optimized game systems to meet PSVR performance requirements"
+    ],
+    "projects": 
+    [ 
+      {
+        "title": "First Impact: Rise of a Hero",
+        "url": "https://redmeat.games/first-impact/"
+      }
+    ]
+  }
+]

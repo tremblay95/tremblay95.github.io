@@ -6,16 +6,17 @@
     <title>{{ site.title }}{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <script src="https://kit.fontawesome.com/beb5026533.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- {% include navbar.html %} -->
-    {% include hero.html %}
     {{ content }}
-    {% include footer.html %}
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
+    {% include footer.html links=page.links %}
     <script src="https://cdn.jsdelivr.net/npm/sweet-scroll@4.0.0/sweet-scroll.min.js"></script>
+    {% if page.particles %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
     <script src="/assets/js/main.js"></script>
+    {% endif %}
   </body>
 </html>
