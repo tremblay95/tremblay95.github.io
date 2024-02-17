@@ -11,9 +11,8 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   </head>
   <body>
-    <!-- {% include navbar.html %} -->
     {{ content }}
-    {% include footer.html links=page.links %}
+    {% include components/footer.html links=page.links %}
     <script src="https://cdn.jsdelivr.net/npm/sweet-scroll@4.0.0/sweet-scroll.min.js"></script>
     {% if page.particles %}
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>

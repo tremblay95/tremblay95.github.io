@@ -1,0 +1,9 @@
+{% capture experience %}
+    <div class="justify-content-center text-center">
+        {% for item in site.data.workhistory %}
+            {% include components/work-entry.html item=item %}
+        {% endfor %}
+    </div>
+{% endcapture %}
+
+{% include components/section.html title="Work Experience" content=experience %}

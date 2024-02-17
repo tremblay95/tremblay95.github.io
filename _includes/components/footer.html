@@ -1,0 +1,13 @@
+
+<footer class="footer py-3 hero-gradient text-white text-center">
+    <div class="container">
+        {% if include.links %}
+        <div class="d-grid gap-md-4 mt-0 mb-2 d-md-flex d-none justify-content-sm-center">
+            <a class="text-decoration-none link-light link-opacity-75-hover" href="/">Home</a>
+            <div class="vr border"></div>
+            <a class="text-decoration-none link-light link-opacity-75-hover" href="/resume">Resume</a>
+        </div>
+        {% endif %}
+        <span class="fs-6 fw-light">&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</span>
+    </div>
+</footer>

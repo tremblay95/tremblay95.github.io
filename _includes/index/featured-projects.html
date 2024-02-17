@@ -1,0 +1,13 @@
+{% capture projects %}
+    <div class="row justify-content-center">
+    {% for item in site.data.projects %}
+        {% include components/project-card.html item=item %}
+    {% endfor %}
+    </div>
+    <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
+        <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/projects">All Projects</a> -->
+        <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="{{ site.github-url }}" target="_blank" rel="noopener noreferrer">My GitHub</a>
+    </div>
+{% endcapture %}
+
+{% include components/section.html title="Featured Projects" content=projects id="projects" %}
