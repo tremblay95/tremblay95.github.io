@@ -1,10 +1,5 @@
 <div id="{{ include.id | '' }}" class="container-fluid mt-5 py-5 text-center text-primary shadow-lg">
-    <div class="text-center text-primary mb-5">
-        <h1 class="display-5 fw-bold">{{ include.title }}</h1>
-        <div class="d-flex justify-content-center">
-            <hr class="bg-primary border-3 rounded-pill border border-primary col-xxl-3 col-lg-4 col-sm-6 col-8" />
-        </div>
-    </div>
+    {% include components/section-header.html title=include.title %}
     <div class="col-lg-10 mx-auto">
         {{ include.content }}
     </div>

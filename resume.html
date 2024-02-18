@@ -7,7 +7,18 @@ links: true
 
 {% include components/hero.html %}
 
+{% capture header %}
+Resume 
+<a href="assets/docs/Marc Tremblay Resume.pdf" class="fs-2 mt-3 ps-3 link-opacity-75-hover link-primary" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-download"></i>
+</a>
+{% endcapture %}
+
 <div class="container-fluid px-0 ">
+    <div class="mt-5">
+        {% include components/section-header.html title=header %}
+    </div>
+    
     {% include resume/summary.html %}
     
     {% include resume/tech-icons.html %}
