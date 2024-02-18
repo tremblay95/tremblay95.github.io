@@ -1,7 +1,7 @@
 {% capture projects %}
     <div class="row justify-content-center">
-    {% for item in site.data.projects %}
-        {% include components/project-card.html item=item %}
+    {% for project in site.data.index.projects %}
+        {% include components/project-card.html project=project %}
     {% endfor %}
     </div>
     <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">

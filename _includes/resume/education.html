@@ -1,0 +1,15 @@
+{% assign school = site.data.aboutme.school %}
+{% capture education %}
+<div class="col-xxl-6 col-xl-8 col-sm-10 col-12 mx-auto my-3">
+    <p class="text-secondary px-4 fw-semibold my-0 text-start">
+        {{ school.date }}
+    </p>
+    <div class="p-0 mx-4 text-start">
+        <h4 class="fw-bold text-primary">{{ school.degree }}</h4>
+        <h5 class="fs-5 text-secondary fw-semibold"> {{ school.name }}</h5>
+        <p class="text-dark lead">{{ school.description }}</p>
+    </div>
+</div>
+{% endcapture %}
+
+{% include components/section.html title="Education" content=education %}

@@ -1,0 +1,21 @@
+<div class="row justify-content-center my-3">
+    <div class="col-md-10">
+        <div class="d-flex flex-column flex-md-row justify-content-start justify-content-md-center">
+            <p class="d-md-inline d-none col-xl-4 col-md-3 text-secondary border-end border-2 border-muted px-4 fw-semibold my-0 text-end">
+                {{ include.entry.date }}
+            </p>
+            <p class="d-md-none d-inline col-xl-4 col-md-3 text-secondary px-4 fw-semibold my-0 text-start">
+                {{ include.entry.date }}
+            </p>
+            <div class="col-xl-8 col-md-9 py-0 mx-4 text-start">
+                <h4 class="fw-bold text-primary">{{ include.entry.title }}</h4>
+                <p class="text-dark lead">{{ include.entry.description }}</p>
+            </div>
+            {% if forloop.last != true %}
+            <div class="d-flex justify-content-center d-md-none">
+                <hr class="bg-muted border-1 rounded-pill border border-muted col-10" />
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

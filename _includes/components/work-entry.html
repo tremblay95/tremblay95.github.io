@@ -1,16 +1,16 @@
 <div class="col-xxl-6 col-xl-8 col-sm-10 col-12 mx-auto my-3">
     <p class="text-secondary px-4 fw-semibold my-0 text-start">
-        {{ include.item.date }}
+        {{ include.job.date }}
     </p>
     <div class="p-0 mx-4 text-start">
-        <h4 class="fw-bold text-primary">{{ include.item.title }} <span class="fs-5 text-secondary fw-semibold"> {{ include.item.company }}</span></h4>
+        <h4 class="fw-bold text-primary">{{ include.job.title }} <span class="fs-5 text-secondary fw-semibold"> {{ include.job.company }}</span></h4>
         <ul class="text-dark lead">
-            {% for task in include.item.tasks %}
+            {% for task in include.job.tasks %}
             <li>{{ task }}</li>
             {% endfor %}
         </ul>
         <div class="d-grid gap-4 mt-3 mb-0 d-flex justify-content-center">
-            {% for project in include.item.projects %}
+            {% for project in include.job.projects %}
                 {% if project.url %}
                 <a href="{{ project.url }}" class="my-0 fw-semibold link-primary text-decoration-none text-center" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
                 {% else %}

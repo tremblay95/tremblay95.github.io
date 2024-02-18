@@ -1,0 +1,79 @@
+{
+    "projects":
+    [
+        {
+            "title": "Aura",
+            "description": "An RPG project made in Unreal Engine 5, with C++ and Blueprints, using Unreal's Gameplay Ability System plugin.",
+            "image": "assets/images/aura-temp.png",
+            "tags": [ "C++", "UE5", "GAS" ],
+            "status": "In Progress",
+            "status-color": "warning",
+            "url": "https://github.com/tremblay95/ue5-gas-aura",
+            "external": "true"
+        },
+        {
+            "title": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor.",
+            "image": "assets/images/temp.png",
+            "tags": [ "A", "List", "Of", "Tags" ],
+            "status": "Upcoming",
+            "status-color": "secondary"
+        },
+        {
+            "title": "Project 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus dolor, volutpat at nisl eu, bibendum sodales purus. Quisque pharetra, odio ut congue laoreet, magna nunc lacinia dolor, eu placerat elit nunc ac ex. Pellentesque nisi eros, fermentum at commodo vitae, dapibus eu mauris. Nullam dictum sapien magna, sed aliquet tortor feugiat ac.",
+            "image": "assets/images/temp.png",
+            "tags": [ "Some", "Tag" ],
+            "status": "Done",
+            "status-color": "success"
+        }
+    ],
+    "timeline":
+    [
+        {
+            "date": "2021 - 2023",
+            "title": "Software Engineer at IUGO Mobile Entertainment",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor."
+        },
+        {
+            "date": "2020 - 2021",
+            "title": "Game Programmer at Red Meat Games",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex."
+        },
+        {
+            "date": "2020",
+            "title": "Teaching Assistant at UOIT",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius."
+        },
+        {
+            "date": "2014 - 2019",
+            "title": "Bachelor of Science (Hons.) Computer Science",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor. "
+        },
+        {
+            "date": "2019",
+            "title": "Teaching Assistant at UOIT",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius."
+        },
+        {
+            "date": "2018",
+            "title": "Game Programmer (Intern) at Blot Interactive",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna."
+        },
+        {
+            "date": "2017",
+            "title": "Game Programmer (Intern) at Red Meat Games",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et."
+        },
+        {
+            "date": "2010 - 2012",
+            "title": "Participated in 'ProtoLaunch'",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex."
+        },
+        {
+            "date": "2010",
+            "title": "Wrote My First Lines of Code",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+}

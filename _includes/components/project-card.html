@@ -1,6 +1,6 @@
-{% if include.item.status %}
+{% if include.project.status %}
     {% capture badge %}
-        <p><span class="badge fw-normal rounded-pill px-3 py-2 bg-{{ include.item.status-color }} text-white">{{ include.item.status }}</span></p>
+        <p><span class="badge fw-normal rounded-pill px-3 py-2 bg-{{ include.project.status-color }} text-white">{{ include.project.status }}</span></p>
     {% endcapture %}
 {% else %}
     {% assign statuscolor = "muted" -%}
@@ -9,18 +9,24 @@
     {% endcapture %}
 {% endif %}
 <div class="card p-0 col-xxl-3 col-lg-5 col-md-8 col-12 mx-2 my-2 border-2 shadow">
-    {% if include.item.image %}
-        <img src="{{ include.item.image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.item.title }}">
+    {% if include.project.image %}
+        <img src="{{ include.project.image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.project.title }}">
     {% endif %}
     <div class="card-body">
-        {% if include.item.url %}
-            <h3 class="card-title fw-bold"><a class="link-underline-opacity-0 link-primary link-underline-opacity-75-hover" href="{{ include.item.url }}" {{ include.item.link-props }}>{{ include.item.title }}</a></h3>{{ badge }}
+        {% if include.project.url %}
+            <h3 class="card-title fw-bold">
+                <a class="link-underline-opacity-0 link-primary link-underline-opacity-75-hover" 
+                href="{{ include.project.url }}" 
+                {% if include.project.external == "true" %}
+                target="_blank" rel="noopener noreferrer"
+                {% endif %}>{{ include.project.title }}</a>
+            </h3>{{ badge }}
         {% else %}
-            <h3 class="card-title text-primary fw-bold">{{ include.item.title }}</h3>{{ badge }}
+            <h3 class="card-title text-primary fw-bold">{{ include.project.title }}</h3>{{ badge }}
         {% endif %}
-        <p class="text-left card-text text-primary text-truncate-3">{{ include.item.description }}</p>
+        <p class="text-left card-text text-primary text-truncate-3">{{ include.project.description }}</p>
         <div class="d-grid gap-2 d-flex justify-content-center">
-        {% for tag in include.item.tags %}
+        {% for tag in include.project.tags %}
             {% include components/tag.html content=tag %}
         {% endfor %}
         </div>
