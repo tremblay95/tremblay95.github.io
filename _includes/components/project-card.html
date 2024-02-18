@@ -9,8 +9,9 @@
     {% endcapture %}
 {% endif %}
 <div class="card p-0 col-xxl-3 col-lg-5 col-md-8 col-12 mx-2 my-2 border-2 shadow">
-    {% if include.project.image %}
-        <img src="{{ include.project.image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.project.title }}">
+    {% if include.project.images %}
+        {% assign image = include.project.images[0] %}
+        <img src="{{ image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.project.title }}">
     {% endif %}
     <div class="card-body">
         {% if include.project.url %}
