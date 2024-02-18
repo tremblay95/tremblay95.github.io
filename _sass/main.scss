@@ -16,3 +16,8 @@
 {
     background: radial-gradient(at top left, $cyan-700, $primary);
 }
+
+.project-card:hover
+{
+    opacity: 0.75;
+}

@@ -10,7 +10,7 @@
 {% endif %}
 
 {% if include.project.url %}
-<a href="{{ include.project.url }}" class="text-decoration-none p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-12 link-opacity-75-hover"
+<a href="{{ include.project.url }}" class="text-decoration-none p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-12 project-card"
     {% if include.project.external == "true" %}
         target="_blank" rel="noopener noreferrer"
     {% endif %}>
@@ -23,7 +23,7 @@
         <img src="{{ image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.project.title }}">
     {% endif %}
     <div class="card-body">
-        <h3 class="card-title link-primary fw-bold">{{ include.project.title }}</h3>{{ badge }}
+        <h3 class="card-title text-primary fw-bold">{{ include.project.title }}</h3>{{ badge }}
         <p class="text-left card-text text-primary text-truncate-3">{{ include.project.description }}</p>
         <div class="d-grid gap-2 d-flex justify-content-center">
         {% for tag in include.project.tags %}
