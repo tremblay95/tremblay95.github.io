@@ -1,6 +1,7 @@
 {% capture projects %}
     <div class="row justify-content-center">
-    {% for project in site.data.index.projects %}
+    {% for featured in site.data.index.projects %}
+        {% assign project = site.data.projects[featured] %}
         {% include components/project-card.html project=project %}
     {% endfor %}
     </div>
