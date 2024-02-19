@@ -7,6 +7,7 @@ about-me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
 email: "marc.tremblay1995@gmail.com"
 github-url: "https://github.com/tremblay95"
 linkedin-url: "https://linkedin.com/in/marctremblay1995"
+resume-pdf: "assets/docs/Marc Tremblay Resume.pdf"
 
 sass:
   load_paths:
