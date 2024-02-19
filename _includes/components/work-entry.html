@@ -11,10 +11,11 @@
         </ul>
         <div class="d-grid gap-4 mt-3 mb-0 d-flex justify-content-center">
             {% for project in include.job.projects %}
-                {% if project.url %}
-                <a href="{{ project.url }}" class="my-0 fw-semibold link-primary text-decoration-none text-center" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                {% if site.data.projects[project] %}
+                    {% assign projectData = site.data.projects[project] %}
+                    <a href="{{ projectData.url }}" class="my-0 fw-semibold link-primary text-decoration-none text-center" target="_blank" rel="noopener noreferrer">{{ projectData.title }}</a>
                 {% else %}
-                <p class="my-0 fw-semibold text-muted text-center">{{ project.title }}</p>
+                    <p class="my-0 fw-semibold text-muted text-center">{{ project }}</p>
                 {% endif %}
             {% endfor %}
         </div>

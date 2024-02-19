@@ -1,6 +1,6 @@
 {% if include.project.status %}
     {% capture badge %}
-        <p><span class="badge fw-normal rounded-pill px-3 py-2 bg-{{ include.project.status-color }} text-white">{{ include.project.status }}</span></p>
+        <p><span class="badge fw-bold rounded-pill px-3 py-2 bg-{{ include.project.status-color }} text-white">{{ include.project.status }}</span></p>
     {% endcapture %}
 {% else %}
     {% assign statuscolor = "muted" -%}

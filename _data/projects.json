@@ -1,4 +1,16 @@
 {
+    "Kingpin": {
+        "title": "Kingpin Underworld",
+        "description": "A mobile RPG game made with C++ and IUGO's game engine, Connexion. With online PVP raids, campaign story, and character collection.",
+        "images": [
+            "assets/images/kingpin-thumbnail.jpg"
+        ],
+        "tags": [ "C++", "Android", "iOS" ],
+        "status": "IUGO Mobile Entertainment",
+        "status-color": "danger",
+        "url": "https://iugome.com/kingpin-underworld/",
+        "external": "true"
+    },
     "Aura": {
         "title": "Aura",
         "description": "An RPG project made in Unreal Engine 5, with C++ and Blueprints, using Unreal's Gameplay Ability System plugin.",
@@ -30,5 +42,22 @@
         "tags": [ "Some", "Tag" ],
         "status": "Done",
         "status-color": "success"
+    },
+    "sentience": {
+        "title": "Sentience",
+        "url": "https://redmeat.games/sentience/" 
+    }, 
+    "heidi": {
+        "title": "Finding Heidi",
+        "url": "https://redmeat.games/finding-heidi/"
+    },
+    "vocabrawlary": {
+        "title": "VocaBRAWLary",
+        "url": "https://blotinteractive.itch.io/vocabrawlary" 
+    },
+    "superheroVR": {
+        "title": "First Impact: Rise of a Hero",
+        "url": "https://redmeat.games/first-impact/"
     }
+    
 }

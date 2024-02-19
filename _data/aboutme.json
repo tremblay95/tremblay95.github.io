@@ -23,13 +23,8 @@
       ],
       "projects": 
       [
-        {
-          "title": "Unannounced IP"
-        }, 
-        {
-          "title": "Kingpin Underworld",
-          "url": "https://iugome.com/kingpin-underworld/"
-        }
+        "Unannounced IP",
+        "Kingpin"
       ]
     },
     {
@@ -44,17 +39,9 @@
       ],
       "projects": 
       [
-        {
-          "title": "Sentience",
-          "url": "https://redmeat.games/sentience/" 
-        }, 
-        {
-          "title": "Finding Heidi",
-          "url": "https://redmeat.games/finding-heidi/"
-        },
-        {
-          "title": "Unreleased Prototypes"
-        }
+        "sentience",
+        "heidi",
+        "Unreleased Prototypes"
       ]
     },
     {
@@ -69,12 +56,8 @@
       ],
       "projects": 
       [
-        {
-          "title": "Programming Workshop II"
-        }, 
-        {
-          "title": "Computer Graphics and Visualizations"
-        }
+        "Programming Workshop II",
+        "Computer Graphics and Visualizations"
       ]
     },
     {
@@ -88,10 +71,7 @@
       ],
       "projects": 
       [
-        {
-          "title": "VocaBRAWLary",
-          "url": "https://blotinteractive.itch.io/vocabrawlary" 
-        }
+        "vocabrawlary"
       ]
     },
     {
@@ -105,10 +85,7 @@
       ],
       "projects": 
       [ 
-        {
-          "title": "First Impact: Rise of a Hero",
-          "url": "https://redmeat.games/first-impact/"
-        }
+        "superheroVR"
       ]
     }
   ]
