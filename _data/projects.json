@@ -7,7 +7,7 @@
         ],
         "tags": [ "C++", "Android", "iOS" ],
         "status": "IUGO Mobile Entertainment",
-        "status-color": "danger",
+        "status-color": "success",
         "url": "https://iugome.com/kingpin-underworld/",
         "external": "true"
     },
@@ -18,8 +18,8 @@
             "assets/images/aura-temp.png"
         ],
         "tags": [ "C++", "UE5", "GAS" ],
-        "status": "In Progress",
-        "status-color": "warning",
+        "status": "Personal",
+        "status-color": "info",
         "url": "https://github.com/tremblay95/ue5-gas-aura",
         "external": "true"
     },
@@ -41,7 +41,7 @@
         ],
         "tags": [ "Some", "Tag" ],
         "status": "Done",
-        "status-color": "success"
+        "status-color": "secondary"
     },
     "sentience": {
         "title": "Sentience",
@@ -59,5 +59,4 @@
         "title": "First Impact: Rise of a Hero",
         "url": "https://redmeat.games/first-impact/"
     }
-    
 }
