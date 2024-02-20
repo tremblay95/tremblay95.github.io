@@ -1,8 +1,6 @@
 fetch('assets/data/projects.json')
     .then(response => response.json())
     .then(projectsData => {
-        console.log(projectsData);
-
         const projectCardTemplate = (project, link_attr, tags) => `
         <a href="${ project.url }" class="text-decoration-none p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-10 project-card" ${ link_attr }>
             <div class="card  border-2 shadow">
