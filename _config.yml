@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 author: "Marc Tremblay"
 title: "Marc Tremblay" # the name of your site, e.g. ACME Corp.
 tagline: 'Software Developer <span class="d-md-inline d-none">-</span><br class="d-md-none" /> Game Programmer'
-about-me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor."
+about-me: "This website is still a WIP.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor."
 email: "marc.tremblay1995@gmail.com"
 github-url: "https://github.com/tremblay95"
 linkedin-url: "https://linkedin.com/in/marctremblay1995"
