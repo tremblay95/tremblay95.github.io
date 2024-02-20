@@ -1,9 +1,5 @@
 {% capture projects %}
-    <div class="row justify-content-center">
-    {% for featured in site.data.index.projects %}
-        {% assign project = site.data.projects[featured] %}
-        {% include components/project-card.html project=project %}
-    {% endfor %}
+    <div id="projects" class="row justify-content-center">
     </div>
     <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
         <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/projects">All Projects</a> -->
@@ -11,4 +7,4 @@
     </div>
 {% endcapture %}
 
-{% include components/section.html title="Featured Projects" content=projects id="projects" %}
+{% include components/section.html title="Featured Projects" id="featured-projects" content=projects %}
