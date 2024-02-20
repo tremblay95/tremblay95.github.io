@@ -1,12 +1,9 @@
-{% capture aboutme %}
-    <div class="mx-auto col-xxl-10 col-12">
-        <p class="lead px-5">
-            {{ site.about-me }}
-        </p>
-        <div class="d-grid gap-2 mt-5 d-flex justify-content-center">
-            <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/resume">Resume</a>
-        </div>
+<div class="mx-auto col-xxl-10 col-12">
+    <p class="lead px-5 text-center">
+        {{ site.about-me }}
+    </p>
+    <div class="d-grid gap-2 mt-5 d-flex justify-content-center">
+        <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/resume">Resume</a>
     </div>
-{% endcapture %}
-
-{% include components/section.html title="About Me" content=aboutme id="about" %}
+</div>

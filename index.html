@@ -6,7 +6,12 @@ particles: true
 
 {% include components/hero-fullscreen.html %}
 
-{% include index/about-me.html %}
+<div class="container-fluid px-0">
+    <div id="about" class="mt-5">
+        {% include components/section-header.html title="About Me" %}
+    </div>
+    {% include index/about-me.html %}
+</div>
 
 {% include index/featured-projects.html %}
 
