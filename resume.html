@@ -2,22 +2,44 @@
 layout: default
 title: " - Resume"
 
-pdf: true
-links: true
+nav: [
+    {
+        "title": "Home",
+        "icon": "bi-house-fill",
+        "link": "/",
+        "no-scroll": true
+    },
+    {
+        "title": "Summary",
+        "icon": "bi-person-fill",
+        "link": "#"
+    },
+    {
+        "title": "Work Experience",
+        "icon": "bi-briefcase-fill",
+        "link": "#work-experience"
+    },
+    {
+        "title": "Education",
+        "icon": "bi-mortarboard-fill",
+        "link": "#education"
+    },
+    {
+        "title": "Download - Marc Tremblay Resume.pdf",
+        "icon": "bi-download",
+        "link": "assets/docs/Marc Tremblay Resume.pdf",
+        "external": true,
+        "inverted": true,
+        "no-scroll": true
+    }
+]
 ---
 
 {% include components/hero.html %}
 
-{% capture header %}
-Resume 
-<a href="{{ site.resume-pdf }}" class="fs-2 mt-3 px-3 py-2 primary-link-inverted bg-primary-transparent rounded" target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-download"></i>
-</a>
-{% endcapture %}
-
 <div class="container-fluid px-0 ">
-    <div class="mt-5">
-        {% include components/section-header.html title=header %}
+    <div id="summary" class="mt-5">
+        {% include components/section-header.html title="Summary" %}
     </div>
     
     {% include resume/summary.html %}

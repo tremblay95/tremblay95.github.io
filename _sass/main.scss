@@ -64,6 +64,17 @@ $link-transition: ease;
     }
 }
 
+.bg-primary-link
+{
+    background-color: $primary;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        background-color: $light;
+    }
+}
+
 .bg-primary-transparent
 {
     background-color: rgba($primary, 0);

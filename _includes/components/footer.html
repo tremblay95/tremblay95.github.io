@@ -1,21 +1,6 @@
 
 <footer class="footer py-3 hero-gradient text-white text-center">
     <div class="container">
-        {% if include.links %}
-        <div class="d-grid gap-md-4 mt-0 mb-2 d-md-flex d-none justify-content-sm-center">
-            <a class="text-decoration-none link-light link-opacity-75-hover" href="/">Home</a>
-            <div class="vr border"></div>
-            {% if page.pdf %}
-            <a class="text-decoration-none link-light link-opacity-75-hover" href="{{ site.resume-pdf }}" target="_blank" rel="noopener noreferrer">Resume</a>
-            {% else %}
-            <a class="text-decoration-none link-light link-opacity-75-hover" href="/resume">Resume</a>
-            {% endif %}
-            <div class="vr border"></div>
-            <!-- <a class="text-decoration-none link-light link-opacity-75-hover" href="/projects">Projects</a>
-            <div class="vr border"></div> -->
-            <a class="text-decoration-none link-light link-opacity-75-hover" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">Contact</a>
-        </div>
-        {% endif %}
         <span class="fs-6 fw-light">&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</span>
     </div>
 </footer>
