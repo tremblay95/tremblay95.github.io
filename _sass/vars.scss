@@ -1,10 +1,11 @@
 /* Custom Variables */
 
-$primary: rgb(27, 62, 107); /* change bootstrap 5 primary color to red */
-$info: #087990; /* personal projects */
+$primary: #087990;; /* change bootstrap 5 primary color to red */
+// $info: #087990; /* personal projects */
 $danger: #b02a37; /* RMG projects */
-$success: #59359a; /* IUGO projects */
+$success: #8063b8; /* IUGO projects */
 $warning: #d63384; /* Blot projects */
+$light: whitesmoke;
 
 $display-font-sizes: (
   1: 6.5rem,

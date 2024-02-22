@@ -25,7 +25,7 @@
             ],
             "tags": [ "C++", "UE5", "GAS" ],
             "status": "Personal",
-            "status_color": "info",
+            "status_color": "primary",
             "url": "https://github.com/tremblay95/ue5-gas-aura",
             "external": "true"
         },

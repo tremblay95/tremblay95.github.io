@@ -2,8 +2,12 @@
     <div id="projects" class="row justify-content-center">
     </div>
     <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
-        <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="/projects">All Projects</a> -->
-        <a class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold" href="{{ site.github-url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        {% capture github %}
+            mailto:{{ site.github-url }}
+        {% endcapture %}
+        
+        <!-- {% include components/text-button.html link="/projects" external="false" text="All Projects" %} -->
+        {% include components/text-button.html link=github external="true" text="GitHub" %}
     </div>
 {% endcapture %}
 

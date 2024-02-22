@@ -14,10 +14,92 @@
 
 .hero-gradient
 {
-    background: radial-gradient(at top left, $cyan-700, $primary);
+    background: radial-gradient(at top left, $primary, rgb(27, 62, 107));
 }
 
-.project-card:hover
+.project-overlay
 {
-    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+.project-card:hover 
+{
+    .project-overlay
+    {
+        opacity: 1;
+    }
+}
+
+$link-transition-time: 0.2s;
+$link-transition: ease;
+
+.primary-link-no-bg
+{
+    color: $primary;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        color: $cyan-800;
+    }
+}
+
+.primary-link
+{
+    color: $light;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        color: $primary;
+    }
+}
+
+.bg-primary-transparent
+{
+    background-color: rgba($primary, 0);
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        background-color: rgba($primary, 1);
+    }
+}
+
+.primary-link-inverted
+{
+    color: $primary;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        color: $light;
+    }
+}
+
+.bg-primary-link-inverted
+{
+    background-color: $light;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
+    {
+        background-color: $primary;
+    }
+}
+
+.nav-circle
+{
+    border-radius: 100%;
+    padding: 0.5rem 1.1rem 0.7rem 1.1rem;
+    box-shadow: 0px 0px 5px #666;
 }
