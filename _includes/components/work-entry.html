@@ -3,7 +3,7 @@
         {{ include.job.date }}
     </p>
     <div class="p-0 mx-4 text-start">
-        <h4 class="fw-bold text-primary">{{ include.job.title }} <span class="fs-5 text-secondary fw-semibold"> {{ include.job.company }}</span></h4>
+        <h4 class="fw-bold text-primary">{{ include.job.title }} <br class="d-md-none" /> <span class="fs-5 text-secondary fw-semibold"> {{ include.job.company }}</span></h4>
         <ul class="text-dark lead">
             {% for task in include.job.tasks %}
             <li>{{ task }}</li>
