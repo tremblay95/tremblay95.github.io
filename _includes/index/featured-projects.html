@@ -1,13 +1,9 @@
 {% capture projects %}
     <div id="projects" class="row justify-content-center">
     </div>
-    <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
-        {% capture github %}
-            mailto:{{ site.github-url }}
-        {% endcapture %}
-        
+    <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">       
         <!-- {% include components/text-button.html link="/projects" external="false" text="All Projects" %} -->
-        {% include components/text-button.html link=github external="true" text="GitHub" %}
+        {% include components/text-button.html link=site.github-url external="true" text="GitHub" %}
     </div>
 {% endcapture %}
 

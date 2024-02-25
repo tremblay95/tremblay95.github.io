@@ -6,6 +6,7 @@ fetch('assets/data/projects.json')
             <div class="card rounded project-card">
                 <img src="${ project.images[0] }" class="rounded" alt="${ project.title }">
                 <div class="project-overlay d-flex flex-column justify-content-center align-items-center rounded bg-dark bg-opacity-75">
+                    <i class="bi bi-box-arrow-up-right position-absolute top-0 end-0 fs-4 my-2 mx-3 text-white"></i>
                     <h3 class="card-title text-white fw-bold">${ project.title }</h3>
                     <p><span class="badge fw-bold rounded-pill px-3 py-2 bg-${ project.status_color} bg-gradient text-white shadow">${ project.status }</span></p>
                     <div class="d-grid gap-2 mt-3 d-flex justify-content-center">
@@ -14,6 +15,18 @@ fetch('assets/data/projects.json')
                 </div>
             </div>
         </a>`;
+        const projCardNoLinkTemplate = (project, tags) => `
+        <div class="card rounded project-card p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-10 rounded">
+                <img src="${ project.images[0] }" class="rounded" alt="${ project.title }">
+                <div class="project-overlay d-flex flex-column justify-content-center align-items-center rounded bg-dark bg-opacity-75">
+                    <h3 class="card-title text-white fw-bold">${ project.title }</h3>
+                    <p><span class="badge fw-bold rounded-pill px-3 py-2 bg-${ project.status_color} bg-gradient text-white shadow">${ project.status }</span></p>
+                    <div class="d-grid gap-2 mt-3 d-flex justify-content-center">
+                        ${tags}
+                    </div>
+                </div>
+            </div>
+        `;
 
         const tagTemplate = (tagName) => `<span class="badge badge-primary border rounded border-2 fw-semibold border-white text-white">${ tagName }</span>`;
 
@@ -26,7 +39,14 @@ fetch('assets/data/projects.json')
                 {
                     tags += tagTemplate(project.tags[tag]);
                 }
-                return projectCardTemplate(project, link_attr, tags);
+                if (project.url)
+                {
+                    return projectCardTemplate(project, link_attr, tags);
+                }
+                else
+                {
+                    return projCardNoLinkTemplate(project, tags);
+                }
             }).join('');
     })
     .catch(error => {
