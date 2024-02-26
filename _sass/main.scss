@@ -39,6 +39,23 @@
     }
 }
 
+.mobile-nav
+{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hide-nav
+{
+    display: none !important;
+}
+
 $link-transition-time: 0.2s;
 $link-transition: ease;
 
@@ -106,6 +123,13 @@ $link-transition: ease;
     {
         background-color: $primary;
     }
+}
+
+.nav-link-mobile
+{
+    border-radius: 50rem;
+    padding: 0.5rem 1.1rem 0.7rem 1.1rem;
+    box-shadow: 0px 0px 5px #666;
 }
 
 .nav-circle
