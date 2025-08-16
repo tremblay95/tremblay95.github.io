@@ -1,47 +1,37 @@
 [
     {
+        "date": "2024 - 2025",
+        "title": "Electronics Assembler at Adamson Systems Engineering",
+        "description": "During my time at Adamson, I worked hands-on with the assembly of high-power audio systems—turning complex schematics and wiring diagrams into precise, reliable hardware. Beyond hardware assembly, I collaborated closely with the electronics testing team, where I gained valuable exposure to STM32 microcontroller development. One of the highlights of this role was contributing to the creation of custom testing equipment, which streamlined internal workflows and sparked my passion for embedded systems and firmware development."
+    },
+    {
         "date": "2021 - 2023",
         "title": "Software Engineer at IUGO Mobile Entertainment",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor."
+        "description": "At IUGO, I worked as a client-side developer on mobile games, contributing to feature implementation and gameplay systems in a fast-paced production environment. I collaborated closely with artists, designers, UX specialists, and server-side developers to bring new features from design to launch, ensuring they were polished and engaging for players. I also participated in regular code reviews, analysed feature requirements to plan development timelines, and diagnosed complex bugs using reproduction steps and debugging tools. This experience gave me a deep appreciation for cross-disciplinary teamwork and the process of delivering high-quality, user-facing experiences at scale."
     },
     {
         "date": "2020 - 2021",
         "title": "Game Programmer at Red Meat Games",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex."
+        "description": "After interning with Red Meat Games, I returned as a Game Programmer to take on a more active role in developing mobile game prototypes. Working closely with a small Ontario-based team, I helped bring several new ideas to life from scratch while also contributing to the continued development of an existing project. Beyond programming, I collaborated across disciplines to iterate quickly and refine concepts into playable builds. I also supported the larger studio by testing their title Sentience, gaining insight into quality assurance and large-scale development pipelines. This role strengthened my skills in rapid prototyping and teamwork in an agile environment."
     },
     {
-        "date": "2020",
+        "date": "2019, 2020",
         "title": "Teaching Assistant at UOIT",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius."
-    },
-    {
-        "date": "2019",
-        "title": "Teaching Assistant at UOIT",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius."
+        "description": "In my final year at UOIT, I worked as a Teaching Assistant for the <em>Programming Workshop II</em> course, where I supported students during lab sessions, helped troubleshoot coding challenges, and assisted with grading assignments and exams. After graduating, I continued as a part-time TA for the <em>Computer Graphics and Visualisations</em> course while working at Red Meat Games. In both roles, I proctored tests and provided guidance during labs, developing strong communication and mentoring skills that I continue to bring to collaborative development environments."
     },
     {
         "date": "2018",
         "title": "Game Programmer (Intern) at Blot Interactive",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna."
+        "description": "In my second summer internship, I joined Blot Interactive to take on a more complex challenge: transforming an old Facebook Messenger game, <em>Chat Fu</em>, into a standalone PC title called <em>VocaBRAWLary</em>. My primary responsibility was integrating the Steamworks API to add multiplayer functionality, which involved tackling networking complexities and ensuring smooth, synchronised gameplay. This project gave me hands-on experience with online systems and taught me how to design beyond single-player environments, making it one of the most technically rewarding experiences of my early career."
     },
     {
         "date": "2017",
         "title": "Game Programmer (Intern) at Red Meat Games",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et."
+        "description": "The year before, I interned with Red Meat Games, where I contributed to the final development phase of their VR title <em>First Impact: Rise of a Hero</em>. My work involved fixing bugs and implementing performance optimisations to meet strict hardware and platform requirements. This experience introduced me to the unique challenges of VR development and set the foundation for my interest in solving technical problems under demanding constraints."
     },
     {
         "date": "2014 - 2019",
         "title": "Bachelor of Science (Hons.) Computer Science",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor. "
-    },
-    {
-        "date": "2010 - 2012",
-        "title": "Participated in 'ProtoLaunch'",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex."
-    },
-    {
-        "date": "2010",
-        "title": "Wrote My First Lines of Code",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "I began my studies in the <em>Game Development and Entrepreneurship</em> program at the University of Ontario Institute of Technology (now Ontario Tech University), but after my first year, I realised my true passion was in software development. <strong>This experience taught me the importance of adaptability and being willing to pivot when I discovered where my real strengths and interests lie.</strong> This led me to transition into the <em>Computer Science</em> program, where I built a strong foundation in both theory and practical application. Across both programs, I explored a wide range of topics—including computer architecture, compilers, computer networks, software quality assurance, massively parallel programming, game sound, computer graphics, web and mobile application development, and more—giving me a broad technical perspective and a deep appreciation for how software powers everything from games to complex systems. "
     }
 ]
