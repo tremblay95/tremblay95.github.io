@@ -1,7 +1,7 @@
 <div class="nav d-md-block d-none position-fixed top-50 start-0 translate-middle-y z-2 ms-4 fs-2">
     {% for item in page.nav %}
-        <div class="nav-item my-3">
-            <a class="nav-link nav-circle align-middle d-flex align-center
+        <div class="nav-item nav-hex-shadow d-flex {% cycle '', 'nav-item-even' %}">
+            <a class="nav-link nav-hex align-middle d-flex align-center
             {% if item.inverted %}
                 primary-link bg-primary-link
             {% else %}
@@ -15,8 +15,10 @@
                 data-scroll
             {% endunless %}>
                 <i class="bi {{ item.icon }}"></i>
-                <span class="nav-label fs-5 me-1 ms-3 fw-semibold align-self-center">{{ item.title }}</span>
             </a>
+            <span class="nav-label fs-5 me-1 ms-1 fw-semibold align-self-center">
+                {{ item.title }}
+            </span>
         </div>
     {% endfor %}
 </div>
