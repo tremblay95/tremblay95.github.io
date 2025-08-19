@@ -16,37 +16,41 @@
             {% endunless %}>
                 <i class="bi {{ item.icon }}"></i>
             </a>
-            <span class="nav-label fs-5 me-1 ms-1 fw-semibold align-self-center">
+            <span class="nav-label fs-5 translate-middle-y top-50 align-center align-middle fw-semibold align-self-center">
                 {{ item.title }}
             </span>
         </div>
     {% endfor %}
 </div>
-<button onclick="ToggleNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-hex-flattop align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
-    <i class="bi bi-list"></i>
-</button>
-<div id="mobile-nav" class="mobile-nav d-flex d-md-none flex-column justify-content-center align-items-center bg-white hide-nav">
-    <button onclick="HideNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-hex-flattop align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
-        <i class="bi bi-x"></i>
-    </button>
-    {% for item in page.nav %}
-        <div class="nav-item my-3 px-3 col-10 w-100">
-            <a onclick="HideNav()" class="nav-link nav-link-mobile align-middle d-flex align-center justify-content-center
-            {% if item.inverted %}
-                primary-link bg-primary-link
-            {% else %}
-                primary-link-inverted bg-primary-link-inverted
-            {% endif %}" aria-current="page"  href="{{ item.link }}" 
-            {% if item.external %}
-                target="_blank" rel="noopener noreferrer"
-            {% endif %}
-            
-            {% unless item.no-scroll %}
-                data-scroll
-            {% endunless %}>
-                <i class="bi {{ item.icon }} fs-2"></i>
-                <span class="fs-5 me-1 ms-3 fw-semibold align-self-center">{{ item.title }}</span>
-            </a>
-        </div>
-    {% endfor %}
+
+<div class="nav d-md-none d-block position-fixed bottom-0 start-0 translate-bottom-y z-2 ms-2 mb-4 fs-2">
+    <div id="mobile-nav" class="hide-nav">
+        {% for item in page.nav %}
+            <div class="nav-item-mobile nav-hex-shadow d-flex {% cycle 'nav-item-even-mobile', '' %}">
+                <a class="nav-link nav-hex-pointytop align-middle d-flex align-center
+                {% if item.inverted %}
+                    primary-link bg-primary-link
+                {% else %}
+                    primary-link-inverted bg-primary-link-inverted
+                {% endif %}" aria-current="page"  href="{{ item.link }}"
+                {% if item.external %}
+                    target="_blank" rel="noopener noreferrer"
+                {% endif %}
+
+                {% unless item.no-scroll %}
+                    data-scroll
+                {% endunless %}>
+                    <i class="bi {{ item.icon }}"></i>
+                </a>
+                <span class="nav-label fs-6 translate-middle-y top-50 align-center align-middle fw-semibold align-self-center">
+                    {{ item.title }}
+                </span>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="nav-item-mobile nav-hex-shadow d-flex">
+        <button onclick="ToggleNav()" class="primary-link bg-primary-link nav-link nav-hex-pointytop align-middle d-flex align-center" type="button" aria-expanded="false" aria-controls="mobile-nav">
+            <i id="mobile-navbtn" class="bi bi-list"></i>
+        </button>
+    </div>
 </div>

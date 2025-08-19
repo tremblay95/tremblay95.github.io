@@ -1,29 +1,22 @@
 const CLASS_NAME_HIDENAV = 'hide-nav';
+const CLASS_NAME_NAVBTN_SHOWN = "bi-x";
+const CLASS_NAME_NAVBTN_HIDDEN = "bi-list";
+
+const mobileNav = document.querySelector('#mobile-nav');
+const mobileNavBtn = document.querySelector('#mobile-navbtn');
 
 function ToggleNav()
 {
-    let nav = document.querySelector('#mobile-nav');
+    mobileNav.classList.toggle(CLASS_NAME_HIDENAV);
 
-    if (nav.classList.contains(CLASS_NAME_HIDENAV))
-    {
-        nav.classList.remove(CLASS_NAME_HIDENAV);
-    }
-    else
-    {
-        nav.classList.add(CLASS_NAME_HIDENAV);
-    }
-
-    console.log(nav.classList);
+    mobileNavBtn.classList.toggle(CLASS_NAME_NAVBTN_HIDDEN);
+    mobileNavBtn.classList.toggle(CLASS_NAME_NAVBTN_SHOWN);
 }
 
 function HideNav()
 {
-    let nav = document.querySelector('#mobile-nav');
+    mobileNav.classList.add(CLASS_NAME_HIDENAV);
 
-    if (!nav.classList.contains(CLASS_NAME_HIDENAV))
-    {
-        nav.classList.add(CLASS_NAME_HIDENAV);
-    }
-
-    return true;
+    mobileNavBtn.classList.remove(CLASS_NAME_NAVBTN_SHOWN);
+    mobileNavBtn.classList.add(CLASS_NAME_NAVBTN_HIDDEN);
 }

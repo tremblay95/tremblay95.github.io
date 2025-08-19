@@ -76,6 +76,11 @@ $link-transition: ease;
     color: $light;
     transition: $link-transition-time $link-transition;
 
+    &:focus
+    {
+        color: $light;
+    }
+
     &:hover
     {
         color: $primary;
@@ -108,6 +113,11 @@ $link-transition: ease;
 {
     color: $primary;
     transition: $link-transition-time $link-transition;
+
+    &:focus
+    {
+        color: $primary;
+    }
 
     &:hover
     {
@@ -152,7 +162,7 @@ $link-transition: ease;
 }
 
 .nav-hex-shadow {
-    filter: drop-shadow(0px 0px 1px #666);
+    filter: drop-shadow(0px 0px 2px #666);
     border-radius: 50rem;
 }
 
@@ -187,23 +197,11 @@ $link-transition: ease;
         opacity: 0;
         transition: opacity 0.3s;
 
-        padding: 5px 8px;
-        border-radius: 2rem;
+        padding: 1px 8px;
+        left: 100%;
+        margin-left: 0.1rem;
 
-        top: 20%;
-        left: 105%;
         z-index: 1;
-    }
-    & .nav-label::after 
-    {
-        content: "";
-        position:absolute;
-        right: 99%;
-        top: 50%;
-        margin-top: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent $light transparent transparent;
     }
 
     &:hover .nav-label
@@ -218,4 +216,33 @@ $link-transition: ease;
 .nav-item-even
 {
     margin-left: 2rem;
+}
+
+.nav-item-mobile
+{
+    margin-top: -0.6rem;
+    margin-bottom: -0.6rem;
+    width: max-content;
+
+    & .nav-label
+    {
+        width: max-content;
+        position: absolute;
+        display: inline;
+        color: $primary;
+        background-color: $light;
+
+        padding: 2px 6px;
+        left: 100%;
+        margin-left: 0.1rem;
+
+        z-index: 1;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+    }
+}
+
+.nav-item-even-mobile
+{
+    margin-left: 1.8rem;
 }
