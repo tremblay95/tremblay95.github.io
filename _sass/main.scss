@@ -156,7 +156,14 @@ $link-transition: ease;
     border-radius: 50rem;
 }
 
-.nav-hex
+.nav-hex-flattop
+{
+    width: fit-content;
+    padding: 0.55rem 1.1rem 0.6rem 1.1rem;
+    clip-path: polygon(1% 50%, 25% 7%, 75% 7%, 99% 50%, 75% 93%, 25% 93%);
+}
+
+.nav-hex-pointytop
 {
     width: fit-content;
     padding: 0.55rem 1.1rem 0.6rem 1.1rem;

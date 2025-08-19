@@ -1,7 +1,7 @@
 <div class="nav d-md-block d-none position-fixed top-50 start-0 translate-middle-y z-2 ms-4 fs-2">
     {% for item in page.nav %}
         <div class="nav-item nav-hex-shadow d-flex {% cycle '', 'nav-item-even' %}">
-            <a class="nav-link nav-hex align-middle d-flex align-center
+            <a class="nav-link nav-hex-pointytop align-middle d-flex align-center
             {% if item.inverted %}
                 primary-link bg-primary-link
             {% else %}
@@ -22,15 +22,15 @@
         </div>
     {% endfor %}
 </div>
-<button onclick="ToggleNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-circle align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
+<button onclick="ToggleNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-hex-flattop align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
     <i class="bi bi-list"></i>
 </button>
 <div id="mobile-nav" class="mobile-nav d-flex d-md-none flex-column justify-content-center align-items-center bg-white hide-nav">
-    <button onclick="HideNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-circle align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
+    <button onclick="HideNav()" class="d-block d-md-none position-fixed top-0 end-0 my-3 mx-2 z-2 primary-link bg-primary-link nav-link nav-hex-flattop align-middle d-flex align-center fs-2" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <i class="bi bi-x"></i>
     </button>
     {% for item in page.nav %}
-        <div class="nav-item my-3 col-10">
+        <div class="nav-item my-3 px-3 col-10 w-100">
             <a onclick="HideNav()" class="nav-link nav-link-mobile align-middle d-flex align-center justify-content-center
             {% if item.inverted %}
                 primary-link bg-primary-link
