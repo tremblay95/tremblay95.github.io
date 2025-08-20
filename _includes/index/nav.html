@@ -27,7 +27,7 @@
     <div id="mobile-nav" class="hide-nav">
         {% for item in page.nav %}
             <div class="nav-item-mobile nav-hex-shadow d-flex {% cycle 'nav-item-even-mobile', '' %}">
-                <a class="nav-link nav-hex-pointytop align-middle d-flex align-center
+                <a onclick="HideNav()" class="nav-link nav-hex-pointytop align-middle d-flex align-center
                 {% if item.inverted %}
                     primary-link bg-primary-link
                 {% else %}
