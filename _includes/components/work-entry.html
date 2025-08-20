@@ -9,11 +9,13 @@
             <li>{{ task }}</li>
             {% endfor %}
         </ul>
+        {% if include.job.projects %}
         <div class="d-grid gap-4 mt-3 mb-0 d-flex justify-content-center">
             {% for project in include.job.projects %}
                 <span  id="project-link" data-project-id="{{ project }}"></span>
             {% endfor %}
         </div>
+        {% endif %}
     </div>
     {% if forloop.last != true %}
     <div class="d-flex justify-content-center">

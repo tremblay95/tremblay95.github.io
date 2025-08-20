@@ -1,14 +1,26 @@
 {
-  "summary": "Results-driven Game Programmer and Software Developer seeking a challenging development role. Proven track record of collaborating within interdisciplinary teams to deliver innovative projects, with experience in C++, C#, Unity, and proprietary engines.",
+  "summary": "Results-driven software developer with expertise in C++ and C#. Experienced in optimising and maintaining complex systems, contributing to performance-critical projects in gaming. Open to applying technical skills to embedded systems, robotics, mobile development, and other innovative fields.",
   "school": 
   {
     "date": "2014 - 2019",
     "name": "University of Ontario Institute of Technology",
     "degree": "Bachelor of Science (Hons.) Computer Science",
-    "description": "<em>Highlights</em> – Object-Oriented Programming, Game Development Workshops, Massively Parallel Programming, Software Quality Assurance, Game Sound, Computer Graphics, Web Applications, Mobile Applications"
+    "description": "Completed coursework in Game Development and Computer Science at the University of Ontario Institute of Technology (now Ontario Tech University). Areas of study included computer architecture, compilers, computer networks, software quality assurance, massively parallel programming, computer graphics, web and mobile application development, and game-related technologies."
   },
   "experience":
   [
+    {
+      "title": "Electronics Assembler",
+      "company": "Adamson Systems Engineering",
+      "date": "2024 - 2025",
+      "tasks": 
+      [
+        "Read and interpreted schematics and wiring diagrams",
+        "Assembled passive electronics for installation in high-powered audio systems",
+        "Collaborated with the electrontics testing team to develop new testing equipment",
+        "Assisted other departments as required"
+      ]
+    },
     {
       "title": "Software Engineer",
       "company": "IUGO Mobile Entertainment",
