@@ -76,7 +76,7 @@ $link-transition: ease;
     color: $light;
     transition: $link-transition-time $link-transition;
 
-    &:focus
+    &:focus, &:active
     {
         color: $light;
     }
@@ -91,6 +91,11 @@ $link-transition: ease;
 {
     background-color: $primary;
     transition: $link-transition-time $link-transition;
+
+    &:focus, &:active
+    {
+        background-color: $primary;
+    }
 
     &:hover
     {
@@ -114,7 +119,7 @@ $link-transition: ease;
     color: $primary;
     transition: $link-transition-time $link-transition;
 
-    &:focus
+    &:focus, &:active
     {
         color: $primary;
     }
@@ -129,6 +134,11 @@ $link-transition: ease;
 {
     background-color: $light;
     transition: $link-transition-time $link-transition;
+
+    &:focus, &:active
+    {
+        background-color: $light;
+    }
 
     &:hover
     {
