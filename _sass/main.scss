@@ -76,12 +76,23 @@ $link-transition: ease;
     color: $light;
     transition: $link-transition-time $link-transition;
 
-    &:focus, &:active, &:visited
+    &:hover
+    {
+        color: $primary;
+    }
+}
+
+.primary-link-mobile
+{
+    color: $light;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
     {
         color: $light;
     }
 
-    &:hover
+    &:active
     {
         color: $primary;
     }
@@ -92,12 +103,22 @@ $link-transition: ease;
     background-color: $primary;
     transition: $link-transition-time $link-transition;
 
-    &:focus, &:active, &:visited
+    &:hover
+    {
+        background-color: $light;
+    }
+}
+.bg-primary-link-mobile
+{
+    background-color: $primary;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
     {
         background-color: $primary;
     }
 
-    &:hover
+    &:active
     {
         background-color: $light;
     }
@@ -119,12 +140,23 @@ $link-transition: ease;
     color: $primary;
     transition: $link-transition-time $link-transition;
 
-    &:focus, &:active, &:visited
+    &:hover
+    {
+        color: $light;
+    }
+}
+
+.primary-link-inverted-mobile
+{
+    color: $primary;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
     {
         color: $primary;
     }
 
-    &:hover
+    &:active
     {
         color: $light;
     }
@@ -135,12 +167,23 @@ $link-transition: ease;
     background-color: $light;
     transition: $link-transition-time $link-transition;
 
-    &:focus, &:active, &:visited
+    &:hover
+    {
+        background-color: $primary;
+    }
+}
+
+.bg-primary-link-inverted-mobile
+{
+    background-color: $light;
+    transition: $link-transition-time $link-transition;
+
+    &:hover
     {
         background-color: $light;
     }
 
-    &:hover
+    &:active
     {
         background-color: $primary;
     }
