@@ -1,7 +1,7 @@
 <div class="nav d-md-block d-none position-fixed top-50 start-0 translate-middle-y z-2 ms-4 fs-2">
     {% for item in page.nav %}
         <div class="nav-item nav-hex-shadow d-flex {% cycle '', 'nav-item-even' %}">
-            <a class="nav-link nav-hex-pointytop align-middle d-flex align-center
+            <a class="nav-link nav-hex align-middle d-flex align-center
             {% if item.inverted %}
                 primary-link bg-primary-link
             {% else %}
@@ -23,11 +23,11 @@
     {% endfor %}
 </div>
 
-<div class="nav d-md-none d-block position-fixed bottom-0 start-0 translate-bottom-y z-2 ms-2 mb-4 fs-2">
+<div class="nav d-md-none d-block position-fixed bottom-0 start-0 z-2 ms-2 mb-4 fs-2">
     <div id="mobile-nav" class="hide-nav">
         {% for item in page.nav %}
             <div class="nav-item-mobile nav-hex-shadow d-flex {% cycle 'nav-item-even-mobile', '' %}">
-                <a onclick="HideNav()" class="nav-link nav-hex-pointytop align-middle d-flex align-center
+                <a onclick="HideNav()" class="nav-link nav-hex align-middle d-flex align-center
                 {% if item.inverted %}
                     primary-link-mobile bg-primary-link-mobile
                 {% else %}
@@ -49,7 +49,7 @@
         {% endfor %}
     </div>
     <div class="nav-item-mobile nav-hex-shadow d-flex">
-        <button onclick="ToggleNav()" class="primary-link-mobile bg-primary-link-mobile nav-link nav-hex-pointytop align-middle d-flex align-center" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <button onclick="ToggleNav()" class="primary-link-mobile bg-primary-link-mobile nav-link nav-hex align-middle d-flex align-center" type="button" aria-expanded="false" aria-controls="mobile-nav">
             <i id="mobile-navbtn" class="bi bi-list"></i>
         </button>
     </div>

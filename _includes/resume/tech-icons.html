@@ -1,5 +1,10 @@
 <div class="my-5 px-5 py-0 col-12 col-md-10 mx-auto gap-3 d-flex flex-wrap justify-content-center">
     {% for icon in site.data.techicons %}
-        <img style="height: 3.5rem;" src="{{ icon.src }}" alt="{{ icon.title }}" title="{{ icon.title }}" />
+        <div class="tech-item d-flex flex-column">
+            <img class="tech-icon" src="{{ icon.src }}" alt="{{ icon.title }}" title="{{ icon.title }}" />
+            <span class="tech-label mt-4 fs-6 translate-middle justify-content-center align-center align-middle fw-semibold align-self-center">
+                {{ icon.title }}
+            </span>
+        </div>
     {% endfor %}
 </div>
