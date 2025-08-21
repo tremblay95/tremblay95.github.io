@@ -1,8 +1,7 @@
 {
     "featured": [
         "kingpin",
-        "aura",
-        "temp1"
+        "mycity"
     ],
     "projects": {
         "kingpin": {
@@ -17,37 +16,17 @@
             "url": "https://www.bluestacks.com/apps/casual/kingpin-underworld-on-pc.html",
             "external": "true"
         },
-        "aura": {
-            "title": "Aura",
-            "description": "An RPG project made in Unreal Engine 5, with C++ and Blueprints, using Unreal's Gameplay Ability System plugin.",
+        "mycity": {
+            "title": "MyCity App",
+            "description": "An Android app showing details of nearby points of interest within my city. A codelab from Android Developers learning website.",
             "images": [
-                "assets/images/aura-temp.png"
+                "assets/images/my-city.png"
             ],
-            "tags": [ "C++", "UE5", "GAS" ],
+            "tags": [ "Kotlin", "Android" ],
             "status": "Personal",
             "status_color": "primary",
-            "url": "https://github.com/tremblay95/ue5-gas-aura",
+            "url": "https://github.com/tremblay95/MyCityApp",
             "external": "true"
-        },
-        "temp1": {
-            "title": "Project 1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae purus sollicitudin, vulputate dui ut, rutrum ligula. Sed non lectus at mauris pulvinar faucibus. Donec elementum pharetra varius. Sed non nunc in ipsum gravida sagittis id in ex. Aliquam diam libero, suscipit eu est iaculis, vestibulum rutrum magna. Praesent dignissim vestibulum sapien, quis porttitor arcu porta et. Maecenas ut arcu faucibus, dapibus turpis nec, luctus tortor.",
-            "images": [
-                "assets/images/temp.png"
-            ],
-            "tags": [ "A", "List", "Of", "Tags" ],
-            "status": "Upcoming",
-            "status_color": "secondary"
-        },
-        "Temp2": {
-            "title": "Project 2",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus dolor, volutpat at nisl eu, bibendum sodales purus. Quisque pharetra, odio ut congue laoreet, magna nunc lacinia dolor, eu placerat elit nunc ac ex. Pellentesque nisi eros, fermentum at commodo vitae, dapibus eu mauris. Nullam dictum sapien magna, sed aliquet tortor feugiat ac.",
-            "images": [
-                "assets/images/temp.png"
-            ],
-            "tags": [ "Some", "Tag" ],
-            "status": "Done",
-            "status_color": "secondary"
         },
         "sentience": {
             "title": "Sentience",
