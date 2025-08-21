@@ -40,6 +40,12 @@
     }
 }
 
+.project-img
+{
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
 $link-transition-time: 0.2s;
 $link-transition: ease;
 

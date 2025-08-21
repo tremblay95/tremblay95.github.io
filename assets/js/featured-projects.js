@@ -4,7 +4,7 @@ fetch('assets/data/projects.json')
         const projectCardTemplate = (project, link_attr, tags) => `
         <a href="${ project.url }" class="text-decoration-none p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-10 rounded" ${ link_attr }>
             <div class="card rounded project-card">
-                <img src="${ project.images[0] }" class="rounded" alt="${ project.title }">
+                <img src="${ project.images[0] }" class="rounded project-img" alt="${ project.title }">
                 <div class="project-overlay d-flex flex-column justify-content-center align-items-center rounded bg-dark bg-opacity-75">
                     <i class="bi bi-box-arrow-up-right position-absolute top-0 end-0 fs-4 my-2 mx-3 text-white"></i>
                     <h3 class="card-title text-white fw-bold">${ project.title }</h3>
