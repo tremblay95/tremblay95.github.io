@@ -10,9 +10,18 @@
             {% endfor %}
         </ul>
         {% if include.job.projects %}
+        {% assign projectsList = site.data.projects.projects %}
         <div class="d-grid gap-4 mt-3 mb-0 d-flex justify-content-center">
-            {% for project in include.job.projects %}
-                <span  id="project-link" data-project-id="{{ project }}"></span>
+            {% for projectId in include.job.projects %}
+                {% assign stylesCommon = "my-0 py-1 px-2 d-inline-block fw-semibold text-center" %}
+
+                {% if projectsList[projectId] %}
+                    {% assign data = projectsList[projectId] %}
+                    <a href="{{ data.url }}" class="{{ stylesCommon }} rounded primary-link-inverted bg-primary-transparent text-decoration-none" target="_blank" rel="noopener noreferrer">{{ data.title }}</a>
+                {% else %}
+                    <p class="{{ stylesCommon }} text-muted">{{ projectId }}</p>
+                {% endif %}
+                </span>
             {% endfor %}
         </div>
         {% endif %}
