@@ -1,37 +1,29 @@
-{% if include.project.status %}
-    {% capture badge %}
-        <p><span class="badge fw-bold rounded-pill px-3 py-2 bg-{{ include.project.status-color }} text-white">{{ include.project.status }}</span></p>
-    {% endcapture %}
-{% else %}
-    {% assign statuscolor = "muted" -%}
-    {% capture badge %}
-        <div class="pt-3 pb-4"></div>
-    {% endcapture %}
-{% endif %}
-
-{% if include.project.url %}
-<a href="{{ include.project.url }}" class="text-decoration-none p-0 mx-2 my-2 col-xxl-3 col-lg-5 col-md-8 col-12 project-card"
-    {% if include.project.external == "true" %}
-        target="_blank" rel="noopener noreferrer"
-    {% endif %}>
-    <div class="card  border-2 shadow">
-{% else %}
-    <div class="card p-0 col-xxl-3 col-lg-5 col-md-8 col-12 mx-2 my-2 border-2 shadow">
-{% endif %}
-    {% if include.project.images %}
-        {% assign image = include.project.images[0] %}
-        <img src="{{ image }}" class="card-img-top border-bottom border-2 border-muted" alt="{{ include.project.title }}">
-    {% endif %}
-    <div class="card-body">
-        <h3 class="card-title text-primary fw-bold">{{ include.project.title }}</h3>{{ badge }}
-        <p class="text-left card-text text-primary text-truncate-3">{{ include.project.description }}</p>
-        <div class="d-grid gap-2 d-flex justify-content-center">
-        {% for tag in include.project.tags %}
-            {% include components/tag.html content=tag %}
-        {% endfor %}
+{% capture cardContent %}
+<div class="card rounded project-card">
+    <img src="{{ include.project.images[0] }}" class="rounded project-img" alt="{{ include.project.title }}"/>
+    <div class="project-overlay d-flex flex-column justify-content-center rounded bg-dark bg-opacity-75">
+        {% if include.project.url %}
+            <i class="bi bi-box-arrow-up-right position-absolute top-0 end-0 fs-4 my-2 mx-3 text-white"></i>
+        {% endif %}
+        <h3 class="card-title text-white fw-bold">{{ include.project.title }}</h3>
+        <p><span class="badge fw-bold rounded-pill px-3 py-2 {{ include.project.status_colour }} bg-gradient text-white shadow">{{ include.project.status }}</span></p>
+        <div class="gap-2 mt-3 d-flex justify-content-center">
+            {% for tag in include.project.tags %}
+                <span class="badge badge-primary border rounded border-2 fw-semibold border-white text-white">{{tag}}</span>
+            {% endfor %}
         </div>
     </div>
 </div>
+{% endcapture %}
+
 {% if include.project.url %}
-</a>
+    <a href="{{ include.project.url }}" class="text-decoration-none p-0 m-2 col-xxl-3 col-lg-5 col-md-8 col-10 rounded"
+    {% assign isExternal = include.project.external %}
+    {% if isExternal %} target="_blank" rel="noopener noreferrer" {% endif %}>
+        {{ cardContent }}
+    </a>
+{% else %}
+    <div class="p-0 m-2 col-xxl-3 col-lg-5 col-md-8 col-10 rounded">
+        {{ cardContent }}
+    </div>
 {% endif %}

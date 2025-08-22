@@ -1,5 +1,10 @@
 {% capture projects %}
     <div id="projects" class="row justify-content-center">
+        {% assign projectsList = site.data.projects.projects %}
+        {% for projectId in site.data.projects.featured %}
+            {% assign projectData = projectsList[projectId] %}
+            {% include components/project-card.html project=projectData %}
+        {% endfor %}
     </div>
     <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">       
         <!-- {% include components/text-button.html link="/projects" external="false" text="All Projects" %} -->

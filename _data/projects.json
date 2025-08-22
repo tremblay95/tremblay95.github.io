@@ -12,9 +12,9 @@
             ],
             "tags": [ "C++", "Android", "iOS" ],
             "status": "IUGO Mobile Entertainment",
-            "status_color": "success",
+            "status_colour": "bg-success",
             "url": "https://www.bluestacks.com/apps/casual/kingpin-underworld-on-pc.html",
-            "external": "true"
+            "external": true
         },
         "mycity": {
             "title": "MyCity App",
@@ -24,9 +24,9 @@
             ],
             "tags": [ "Kotlin", "Android" ],
             "status": "Personal",
-            "status_color": "primary",
+            "status_colour": "bg-primary",
             "url": "https://github.com/tremblay95/MyCityApp",
-            "external": "true"
+            "external": true
         },
         "sentience": {
             "title": "Sentience",
