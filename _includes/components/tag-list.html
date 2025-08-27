@@ -1,0 +1,5 @@
+<div class="gap-2 d-flex justify-content-center">
+    {% for tag in include.tags %}
+        {% include components/tag.html tag=tag colour=include.colour %}
+    {% endfor %}
+</div>

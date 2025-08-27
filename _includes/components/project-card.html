@@ -7,11 +7,7 @@
         {% endif %}
         <h3 class="card-title text-white fw-bold">{{ include.project.title }}</h3>
         <p><span class="badge fw-bold rounded-pill px-3 py-2 {{ include.project.status_colour }} bg-gradient text-white shadow">{{ include.project.status }}</span></p>
-        <div class="gap-2 mt-3 d-flex justify-content-center">
-            {% for tag in include.project.tags %}
-                {% include components/tag.html content=tag %}
-            {% endfor %}
-        </div>
+        {% include components/tag-list.html tags=include.project.tags colour="light" %}
     </div>
 </div>
 {% endcapture %}
