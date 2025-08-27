@@ -9,7 +9,7 @@
         <p><span class="badge fw-bold rounded-pill px-3 py-2 {{ include.project.status_colour }} bg-gradient text-white shadow">{{ include.project.status }}</span></p>
         <div class="gap-2 mt-3 d-flex justify-content-center">
             {% for tag in include.project.tags %}
-                <span class="badge badge-primary border rounded border-2 fw-semibold border-white text-white">{{tag}}</span>
+                {% include components/tag.html content=tag %}
             {% endfor %}
         </div>
     </div>
