@@ -20,7 +20,12 @@
             "title": "MyCity App",
             "description": "An Android app showing details of nearby points of interest within my city. A codelab from Android Developers learning website.",
             "images": [
-                "/assets/images/my-city.png"
+                "/assets/images/my-city.png",
+                "/assets/images/kingpin-thumbnail.jpg",
+                "/assets/images/my-city.png",
+                "/assets/images/kingpin-thumbnail.jpg",
+                "/assets/images/my-city.png",
+                "/assets/images/kingpin-thumbnail.jpg"
             ],
             "tags": [ "Kotlin", "Android" ],
             "status": "Personal",

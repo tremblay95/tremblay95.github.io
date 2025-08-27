@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include components/topbar.html %}
+
+{% assign project = site.data.projects.projects[page.projectId] %}
+{% capture content %}
+    <div class="container-fluid">
+        <div class="row">
+            {% if project.images %}
+                <div class="col">
+                    <img class="w-100" src="{{ project.images[0] }}"/>
+                </div>
+            {% endif %}
+            <div class="col px-4 text-start">
+                <div class="d-inline-flex flex-row justify-content-between w-100 mb-3">
+                    <h4 class="fw-bold text-primary">Description</h4>
+                    <span class="fs-6">{% include components/tag-list.html tags=project.tags colour="secondary" %}</span>
+                </div>
+                <p class="text-dark lead">{{ project.description }}</p>
+                <br>
+                <div class="w-100">
+                    <h4 class="fw-bold text-primary">Contributions</h4>
+                </div>
+                <p class="text-dark lead">{{ project.description }}</p>
+            </div>
+        </div>
+    </div>
+
+{% endcapture %}
+
+{% include components/section.html title=project.title content=content %}
