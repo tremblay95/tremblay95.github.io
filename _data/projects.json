@@ -7,11 +7,11 @@
     "projects": {
         "amphibians": {
             "title":"Amphibians App",
-            "description": "An Android Developers practice app for loading data and images from an external API.",
+            "description": "An Android Developers practice app for loading data and images from an external API using coroutines, Retrofit2, and COIL",
             "images": [
                 "/assets/images/amphibians.png"
             ],
-            "tags": [ "Kotlin", "Android" ],
+            "tags": [ "Kotlin", "Android", "Coroutines" ],
             "status": "Personal",
             "status_colour": "bg-primary",
             "url": "https://github.com/tremblay95/android-devs-amphibians",
