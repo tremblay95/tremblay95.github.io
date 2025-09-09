@@ -1,9 +1,22 @@
 {
     "featured": [
+        "amphibians",
         "kingpin",
         "mycity"
     ],
     "projects": {
+        "amphibians": {
+            "title":"Amphibians App",
+            "description": "An Android Developers practice app for loading data and images from an external API.",
+            "images": [
+                "/assets/images/amphibians.png"
+            ],
+            "tags": [ "Kotlin", "Android" ],
+            "status": "Personal",
+            "status_colour": "bg-primary",
+            "url": "https://github.com/tremblay95/android-devs-amphibians",
+            "external": true
+        },
         "kingpin": {
             "title": "Kingpin Underworld",
             "description": "A mobile RPG game made with C++ and IUGO's game engine, Connexion. With online PVP raids, campaign story, and character collection.",
