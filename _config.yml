@@ -2,11 +2,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 author: "Marc Tremblay"
 title: "Marc Tremblay" # the name of your site, e.g. ACME Corp.
-tagline: "Software Developer"
+tagline: "Software Engineer"
 about-me: "Hello! I’m Marc, a results-driven software developer with professional experience in C++ and C#, specializing in large, complex codebases. I’ve consistently contributed to high-impact projects by collaborating across interdisciplinary teams—most recently in the video game industry, where performance, creativity, and tight deadlines are key.<br><br>While my background is rooted in game development, I’m excited to tackle new challenges across various domains. My goal is to bring the same problem-solving mindset and software craftsmanship to any innovative team that values quality and creativity.<br><br>Let’s build something impactful."
 email: "marc.tremblay1995@gmail.com"
-github-url: "https://github.com/tremblay95"
-linkedin-url: "https://linkedin.com/in/marctremblay1995"
+github-url: "https://github.com/tremblaysw"
+linkedin-url: "https://linkedin.com/in/marctremblaysoftware"
 resume-pdf: "assets/docs/Marc Tremblay Resume.pdf"
 
 sass:
