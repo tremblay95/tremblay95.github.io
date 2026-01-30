@@ -14,7 +14,7 @@
             "tags": [ "Kotlin", "Android", "Coroutines", "Flows", "Room" ],
             "status": "Personal",
             "status_colour": "bg-primary",
-            "url": "https://github.com/tremblay95/bill-split-app",
+            "url": "https://github.com/tremblaysw/bill-split-app",
             "external": true
         },
         "amphibians": {
@@ -26,7 +26,7 @@
             "tags": [ "Kotlin", "Android", "Coroutines" ],
             "status": "Personal",
             "status_colour": "bg-primary",
-            "url": "https://github.com/tremblay95/android-devs-amphibians",
+            "url": "https://github.com/tremblaysw/android-devs-amphibians",
             "external": true
         },
         "kingpin": {
@@ -50,7 +50,7 @@
             "tags": [ "Kotlin", "Android" ],
             "status": "Personal",
             "status_colour": "bg-primary",
-            "url": "https://github.com/tremblay95/MyCityApp",
+            "url": "https://github.com/tremblaysw/MyCityApp",
             "external": true
         },
         "sentience": {
